@@ -1,339 +1,844 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="back">← 戻る</string>
-    <string name="next">次 →</string>
+    <string name="next">次へ →</string>
     <string name="ok">OK</string>
     <string name="cancel">キャンセル</string>
     <string name="share">共有</string>
+    <string name="lets_go">始めましょう</string>
+    <string name="loading">情報を取得しています。少しお待ちください…</string>
+    <string name="rate_limit_toast">少し待ってください。短時間に何度も操作しています。</string>
+
     <string name="terms_of_service">利用規約</string>
     <string name="privacy_policy">プライバシーポリシー</string>
-    <string name="loading">情報を取得中。お待ちください…</string>
-    <string name="lets_go">さあ行こう</string>
-    <string name="login_onboarding_heading">自分のコミュニティを見つけ、世界とつながりましょう。</string>
+    <string name="community_guidelines">コミュニティガイドライン</string>
+
+    <string name="login_onboarding_heading">コミュニティを見つけて、世界とつながりましょう。</string>
+    <string name="login_onboarding_body">Stoatは、いつでもどこでも友達やコミュニティとつながるための最良の方法のひとつです。</string>
+
     <string name="email">メール</string>
     <string name="password">パスワード</string>
+
+    <string name="hide_password">パスワードを非表示</string>
+    <string name="show_password">パスワードを表示</string>
+
     <string name="login">ログイン</string>
-    <string name="signup">サインアップ</string>
-    <string name="resend">再送</string>
+    <string name="signup">登録</string>
+    <string name="resend">再送信</string>
     <string name="send_email">メールを送信</string>
+
+    <string name="service_health_alert">現在発生中</string>
+    <string name="service_health_alert_body_default">現在、サービスに問題が発生しています。詳しくはステータスページをご確認ください。</string>
+    <string name="service_health_alert_actions_default">詳しく見る</string>
+    <string name="service_health_alert_actions_dismiss">閉じる</string>
+
+    <string name="could_not_log_in_heading">ログイン中に問題が発生しました</string>
+    <string name="could_not_log_in_body">別の端末からログアウトしたか、インターネット接続が切れている可能性があります。</string>
+    <string name="could_not_log_in_cta_try_again">再試行</string>
+    <string name="could_not_log_in_cta_logout">ログアウト</string>
+
     <string name="login_heading">ログインしましょう</string>
     <string name="password_forgot">パスワードをお忘れですか？</string>
+    <string name="resend_verification">認証メールを再送信</string>
     <string name="password_manager_hint">パスワードマネージャーを使用していますか？</string>
-    <string name="register_heading">Revoltへようこそ</string>
-    <string name="register_image_alt">Revoltを使って物事について話す。</string>
-    <string name="register_form_heading">設定しましょう。</string>
-    <string name="register_data">私たちはあなたの情報を守ります。あなたの情報を販売したり、広告を表示するために使用することはありません。</string>
+    <string name="password_forgot_heading">パスワードをお忘れですか？</string>
+    <string name="password_forgot_instructions">メールアドレスを入力すると、パスワードのリセット手順をお送りします。</string>
+
+    <string name="register_heading">Stoatへようこそ</string>
+    <string name="register_image_alt">Stoatでいろいろなことをチャットしましょう。</string>
+    <string name="register_instructions">集まったり、一緒に過ごしたり、いろいろ話したりする場所です。しかもインターネット上にあります。</string>
+    <string name="register_form_heading">セットアップしましょう。</string>
+    <string name="register_data">あなたのデータは安全に扱われます。私たちはデータを販売せず、広告表示にも使用しません。</string>
+    <string name="register_email">メール</string>
+    <string name="register_email_verification_hint">アカウントを確認するため、認証メールをお送りします。</string>
     <string name="register_password">パスワード</string>
-    <string name="register_password_rules">8文字以上、一般的な単語は使用しないでください。また記号と数字を使用してください。</string>
-    <string name="verify_then_choose_username">メール確認後にユーザー名を選択します。</string>
-    <string name="open_mail_app">メールアプリを開きます</string>
+    <string name="register_password_rules">8文字以上にしてください。よくあるパスワードは避け、記号や数字の使用をおすすめします。</string>
+
+    <string name="check_mail">メールを確認してください！</string>
+    <string name="instructions_at_mail">%1$sに詳しい手順を送信しました。</string>
+    <string name="verify_then_choose_username">メールを認証したら、ユーザー名を選びましょう。</string>
+    <string name="open_mail_app">メールアプリを開く</string>
+
     <string name="onboarding_welcome">ようこそ！</string>
-    <string name="onboarding_lead">ユーザー名を選択する時が来ました！</string>
-    <string name="onboarding_changeable">気が変わったら、ユーザー設定からいつでもユーザー名を変えることができます。</string>
+    <string name="onboarding_lead">ユーザー名を選ぶ時間です！</string>
+    <string name="onboarding_others">他の人はこの名前であなたを見つけ、認識し、メンションします。</string>
+    <string name="onboarding_changeable">気が変わっても、ユーザー設定からいつでもユーザー名を変更できます。</string>
     <string name="onboarding_username">ユーザー名</string>
-    <string name="token_invalid_toast">ログアウトしました。再度ログインして下さい。</string>
-    <string name="mfa_interstitial_header">もう一つ</string>
-    <string name="mfa_interstitial_lead">アカウントを安全に保つために二要素認証が有効になっています。</string>
-    <string name="mfa_totp_header">六桁のコードを入力してください</string>
-    <string name="mfa_type_otp">ワンタイムパスワードを使用する</string>
-    <string name="mfa_type_recovery">回復コードを使用する</string>
+
+    <string name="token_invalid_toast">ログアウトされました。もう一度ログインしてください。</string>
+
+    <string name="mfa_interstitial_header">もうひとつ</string>
+    <string name="mfa_interstitial_lead">アカウントをより安全に保つため、2FAが有効になっています。</string>
+    <string name="mfa_type_otp">ワンタイムパスワードを使用</string>
+    <string name="mfa_type_recovery">リカバリーコードを使用</string>
+
+    <string name="mfa_totp_header">6桁のコードを入力</string>
+    <string name="mfa_totp_lead">認証アプリに表示されている6桁のコードを入力してください。</string>
     <string name="mfa_totp_code">コード</string>
-    <string name="mfa_recovery_header">回復コードを入力してください</string>
-    <string name="mfa_password_header">パスワードを入力してください</string>
-    <string name="about">概要</string>
-    <string name="comingsoon_toast">ごめんなさい、この機能は実装されていません。</string>
+
+    <string name="mfa_recovery_header">リカバリーコードを入力</string>
+    <string name="mfa_recovery_lead">リカバリーコードのいずれかを入力してください。</string>
+    <string name="mfa_recovery_code">コード</string>
+
+    <string name="mfa_password_header">パスワードを入力</string>
+    <string name="mfa_password_lead">続行するにはパスワードを入力してください。</string>
+
+    <string name="about">情報</string>
+    <string name="about_full_name">Stoat for Android</string>
+    <string name="about_brought_to_you_by">Stoatチームが❤️を込めてお届けします。</string>
+    <string name="about_section_debug_information">デバッグ情報</string>
+    <string name="about_section_debug_information_description">アプリに問題が発生している場合、サポートへの問い合わせやバグ報告にこの情報を含めると役立つことがあります。</string>
+    <string name="about_section_debug_information_copy_as_json">JSONとしてコピー</string>
+    <string name="about_section_oss_licenses">オープンソースライセンス</string>
+
+    <string name="oss_attribution">OSSライセンス</string>
+    <string name="oss_attribution_tap_to_view_license">タップしてライセンスを表示</string>
+    <string name="oss_attribution_open_library_website">ライブラリのWebサイトを開く</string>
+
+    <string name="comingsoon_toast">申し訳ありません。この機能はまだ準備できていません。</string>
+    <string name="typing_one">%1$sが入力中…</string>
+    <string name="typing_many">%1$sが入力中…</string>
+    <string name="typing_several">複数人が入力中</string>
+
     <string name="send_alt">送信</string>
+    <string name="pick_emoji_alt">絵文字を選択</string>
     <string name="add_attachment_alt">添付ファイルを追加</string>
     <string name="remove_attachment_alt">添付ファイルを削除</string>
     <string name="remove_reply_alt">返信を削除</string>
-    <string name="reply_mention_on">\@ 有効</string>
-    <string name="reply_mention_off">\@ 無効</string>
-    <string name="too_many_replies">一度に%1$dのメッセージにのみ返信できます。</string>
-    <string name="badge_bot_alt">ボット</string>
+    <string name="reply_mention_on">\@ オン</string>
+    <string name="reply_mention_off">\@ オフ</string>
+    <string name="too_many_replies">一度に返信できるメッセージは%1$d件までです。</string>
+
+    <string name="attachment_spoiler">スポイラー</string>
+
+    <string name="attachment_preview_remove">削除</string>
+    <string name="attachment_preview_close">閉じる</string>
+    <string name="attachment_preview_spoiler">スポイラーとしてマーク</string>
+    <string name="attachment_preview_spoiler_description">この添付ファイルはタップするまで表示されません。</string>
+
+    <string name="emoji_category_smileys">スマイリーと感情</string>
+    <string name="emoji_category_people">人と体</string>
+    <string name="emoji_category_animals">動物と自然</string>
+    <string name="emoji_category_food">食べ物と飲み物</string>
+    <string name="emoji_category_travel">旅行と場所</string>
+    <string name="emoji_category_activities">アクティビティ</string>
+    <string name="emoji_category_objects">オブジェクト</string>
+    <string name="emoji_category_symbols">記号</string>
+    <string name="emoji_category_flags">旗</string>
+
+    <string name="badge_bot_alt">Bot</string>
     <string name="badge_masquerade_alt">リンクされたチャンネルから</string>
+    <string name="badge_platform_moderation_alt">プラットフォームモデレーション</string>
+    <string name="badge_team_member_alt">Stoatチームメンバー</string>
+    <string name="badge_webhook_alt">Webhook</string>
+
+    <string name="unknown">不明</string>
+
     <string name="menu">メニュー</string>
+    <string name="logout">ログアウト</string>
+
+    <string name="home_join_jenvolt">Jenvoltに参加</string>
+    <string name="home_join_jenvolt_description">JenvoltはAndroidアプリなどについて扱う、開発者運営のスペースです。サポートやフィードバックはこちらへ。新機能を試せるかもしれません！ 👀</string>
+
+    <string name="overview_screen_title">自分</string>
+    <string name="overview_screen_error">概要を読み込めませんでした</string>
+    <string name="overview_screen_error_description">後でもう一度お試しください。</string>
+    <string name="overview_screen_settings">設定を開く</string>
+    <string name="overview_screen_settings_description">見た目の変更、アカウント管理など</string>
+    <string name="overview_screen_share_profile">プロフィールを共有</string>
+    <string name="overview_screen_share_profile_description">ユーザーカードを確認し、共有用の特別なリンクを取得します</string>
+    <string name="overview_screen_changelog">新着情報</string>
+    <string name="overview_screen_changelog_description">最近の取り組みや今後の予定を確認します</string>
+    <string name="overview_screen_join_lounge">Stoatサーバーに参加</string>
+    <string name="overview_screen_join_lounge_description">他のStoatユーザーと交流し、フィードバックを送り、Stoatの最新情報を確認します</string>
+    <string name="overview_screen_catch_up">未読を確認</string>
+    <string name="overview_screen_catch_up_description">離れている間に見逃した内容を確認します</string>
+    <string name="overview_screen_catch_up_none">すべて確認済み</string>
+    <string name="overview_screen_catch_up_none_description">前回の訪問以降の新しいメッセージはすべて確認済みです。</string>
+    <string name="overview_screen_catch_up_amount_badge_loading">…</string>
+
+    <string name="catch_up">未読を確認</string>
+
+    <string name="user_card_tap_to_copy">タップしてコピー</string>
+    <string name="user_card_error_sharing">ユーザーカードの共有中にエラーが発生しました。</string>
+    <string name="user_card_data_point_display_name">%1$d.名前</string>
+    <string name="user_card_data_point_username">%1$d.ユーザー名</string>
+    <string name="user_card_data_point_join_date">%1$d.Stoat開始日</string>
+    <string name="user_card_data_point_qrcode">%1$d.QRコード</string>
+    <string name="user_card_data_point_photo">%1$d.写真</string>
+
+    <string name="friends">フレンド</string>
+    <string name="friends_incoming_requests">受信したリクエスト</string>
+    <string name="friends_outgoing_requests">送信したリクエスト</string>
+    <string name="friends_all">すべて</string>
+    <string name="friends_blocked">ブロック中</string>
+    <string name="friends_deny_all_incoming">受信したリクエストをすべてクリア</string>
+    <string name="friends_new_group">新しいグループ</string>
+    <string name="friends_scan_qr">QRコードをスキャン</string>
+    <string name="friends_scan_qr_result_sheet_invalid_title">無効なQRコード</string>
+    <string name="friends_scan_qr_result_sheet_invalid_description">これは有効なStoat QRコードではありません。</string>
+    <string name="friends_scan_qr_result_sheet_missing_permission_title">カメラの権限がありません</string>
+    <string name="friends_scan_qr_result_sheet_missing_permission_description">QRコードをスキャンするには、カメラの権限を許可する必要があります。</string>
+    <string name="friends_scan_qr_result_sheet_success_title">フレンドに追加しますか？</string>
+    <string name="friends_add_by_tag">ユーザー名とタグで追加</string>
+    <string name="friends_add_by_tag_sheet_description">%1$sユーザー名%3$sと%2$sタグ%3$sでフレンドを追加できます。たとえば、ユーザー名が%1$sToast%3$s、タグが%2$s1234%3$sの場合、%1$sToast%3$s#%2$s1234%3$sで追加できます。</string>
+    <string name="friends_add_by_tag_sheet_username">ユーザー名</string>
+    <string name="friends_add_by_tag_sheet_tag">タグ</string>
+    <string name="friends_add_by_tag_sheet_add">追加</string>
+    <string name="friends_add_by_tag_sheet_do_not_add">追加しない</string>
+    <string name="friends_add_by_tag_sheet_paste_from_clipboard">クリップボードから貼り付け</string>
+    <string name="friends_add_by_tag_sheet_invalid_clipboard">クリップボードに有効なユーザー名とタグが含まれていません。</string>
+
+    <string name="main_tab_communities">コミュニティ</string>
+    <string name="main_tab_conversations">会話</string>
+    <string name="main_tab_overview">自分</string>
+
+    <string name="create_group">新しいグループを作成</string>
+    <string name="create_group_description">グループチャットに仲間を集めましょう。最大%1$d人まで追加できます。</string>
+    <string name="create_group_name">グループ名</string>
+    <string name="create_group_search">フレンドを検索</string>
+    <string name="create_group_action">作成</string>
+
     <string name="server_plus_alt">サーバーを追加</string>
-    <string name="no_active_channel">あなたは今チャンネルにいません。</string>
+    <string name="discover_alt">見つける</string>
+
+    <string name="no_channels_heading">少し気まずいですね。</string>
+    <string name="no_channels_body">このサーバーにはチャンネルがありません。ウェルカムチャンネルすらありません。なんて失礼なんでしょう。</string>
+    <string name="no_active_channel">現在チャンネルに参加していません。</string>
+    <string name="no_active_channel_body">始めるには左からサーバーを選択してください。挑戦してみたい場合は、新しいサーバーを作成できます。</string>
+
+    <string name="channel_age_gate_title">このチャンネルはNSFWとしてマークされています</string>
+    <string name="channel_age_gate_description">このチャンネルを表示するには18歳以上である必要があります。</string>
+    <string name="channel_age_gate_dob_section">生年月日</string>
+    <string name="channel_age_gate_dob_day">日</string>
+    <string name="channel_age_gate_dob_month">月</string>
+    <string name="channel_age_gate_dob_year">年</string>
+    <string name="channel_age_gate_dob_proceed">続行</string>
+    <string name="channel_age_gate_dob_cancel">キャンセル</string>
+    <string name="channel_age_gate_dob_invalid">生年月日を入力してください</string>
+    <string name="channel_age_gate_dob_too_young">このチャンネルを表示するには18歳以上である必要があります。</string>
+    <string name="channel_age_gate_dob_invalid_future">未来の日付には生まれられません。</string>
+    <string name="channel_age_gate_dob_invalid_unlikely">%1$d年より前には生まれられません。</string>
+
     <string name="avatar_alt">%1$sのアバター</string>
+
     <string name="direct_messages">ダイレクトメッセージ</string>
+
     <string name="channel_dm">ダイレクトメッセージ</string>
     <string name="channel_text">テキストチャンネル</string>
     <string name="channel_voice">ボイスチャンネル</string>
     <string name="channel_group">グループ</string>
-    <string name="time_rift_heading">ここにはいくつかのメッセージが欠落しているかもしれません。</string>
-    <string name="time_rift_cta">メッセージを読み込む</string>
     <string name="channel_notes">メモ</string>
-    <string name="message_field_placeholder_text">メッセージ #%1$s</string>
-    <string name="message_field_placeholder_group">メッセージ %1$s</string>
-    <string name="reply_message_not_cached">不明なメッセージ</string>
-    <string name="today">今日</string>
+
+    <string name="start_of_conversation">ここが会話の始まりです</string>
+    <string name="time_rift_heading">ここに一部のメッセージが欠けている可能性があります。</string>
+    <string name="time_rift_cta">メッセージを読み込む</string>
+
+    <string name="message_field_placeholder_dm">@%1$sにメッセージ</string>
+    <string name="message_field_placeholder_text">#%1$sにメッセージ</string>
+    <string name="message_field_placeholder_voice">#%1$sにメッセージ</string>
+    <string name="message_field_placeholder_group">%1$sにメッセージ</string>
     <string name="message_field_placeholder_notes">メモを追加</string>
-    <string name="edited">(編集済)</string>
+
+    <string name="message_field_decoration_trusted_moderation_bot">認証済みモデレーションBot</string>
+
+    <string name="message_field_denied_generic">このチャンネルではメッセージを送信できません。</string>
+    <string name="message_field_denied_no_permission">このチャンネルでメッセージを送信する権限がありません。</string>
+    <string name="message_field_denied_platform_moderation">これはモデレーションチームからのお知らせ用の信頼済みチャンネルです。ここではメッセージを送信できません。</string>
+
+    <string name="message_field_editing_message">メッセージを編集中</string>
+    <string name="message_field_editing_message_cancel_alt">編集をキャンセル</string>
+
+    <string name="reply_message_not_cached">不明なメッセージ</string>
+    <string name="reply_message_empty_has_attachments">添付ファイルを送信しました</string>
+
+    <string name="message_blocked">ブロックされたメッセージ</string>
+    <string name="message_failed_to_send">送信に失敗しました。長押ししてオプションを表示</string>
+
+    <string name="message_not_supported">メッセージを表示できません。</string>
+    <string name="message_not_supported_with_context">メッセージを表示できません（%1$s）。</string>
+
+    <string name="message_embed_special_youtube_switch_alt">タップしてYouTubeの動画を再生</string>
+
+    <string name="system_message_ownership_changed_alt">所有権が変更されました</string>
+    <string name="system_message_channel_icon_changed_alt">チャンネルアイコンが変更されました</string>
+    <string name="system_message_channel_description_changed_alt">チャンネルの説明が変更されました</string>
+    <string name="system_message_channel_renamed_alt">チャンネル名が変更されました</string>
+    <string name="system_message_user_removed_alt">ユーザーが削除されました</string>
+    <string name="system_message_user_added_alt">ユーザーが追加されました</string>
+    <string name="system_message_user_banned_alt">ユーザーがBANされました</string>
+    <string name="system_message_user_kicked_alt">ユーザーがキックされました</string>
+    <string name="system_message_user_left_alt">ユーザーが退出しました</string>
+    <string name="system_message_user_joined_alt">ユーザーが参加しました</string>
+    <string name="system_message_message_pinned_alt">メッセージがピン留めされました</string>
+    <string name="system_message_message_unpinned_alt">メッセージのピン留めが解除されました</string>
+    <string name="system_message_text_alt">システムメッセージ</string>
+
+    <string name="system_message_ownership_changed">%1$sが所有権を%2$sに譲渡しました</string>
+    <string name="system_message_channel_icon_changed">%1$sがチャンネルアイコンを変更しました</string>
+    <string name="system_message_channel_description_changed">%1$sがチャンネルの説明を変更しました</string>
+    <string name="system_message_channel_renamed">%1$sがチャンネル名を%2$sに変更しました</string>
+    <string name="system_message_user_removed">%1$sが%2$sを削除しました</string>
+    <string name="system_message_user_added">%1$sが%2$sを追加しました</string>
+    <string name="system_message_user_banned">%1$sがBANされました</string>
+    <string name="system_message_user_kicked">%1$sがキックされました</string>
+    <string name="system_message_user_left">%1$sが退出しました</string>
+    <string name="system_message_user_joined">%1$sが参加しました</string>
+    <string name="system_message_message_pinned">%1$sがこのチャンネルにメッセージをピン留めしました</string>
+    <string name="system_message_message_unpinned">%1$sがこのチャンネルからメッセージのピン留めを解除しました</string>
+
+    <string name="today">今日</string>
+    <string name="yesterday">昨日</string>
+    <string name="x_days_ago">%1$d日前</string>
+    <string name="edited">（編集済み）</string>
+
+    <string name="swipe_to_reply_keep_swiping">返信</string>
+    <string name="swipe_to_reply_release">離して返信</string>
+
+    <string name="disconnected">切断されました</string>
     <string name="tap_to_reconnect">タップして再接続</string>
     <string name="reconnecting">再接続中…</string>
-    <string name="disconnected">切断されました</string>
     <string name="reconnected">再接続しました</string>
-    <string name="tap_to_retry">タップして再試行する</string>
-    <string name="scroll_to_bottom">下にスクロール</string>
+
+    <string name="status">ステータス</string>
+    <string name="status_online">オンライン</string>
+    <string name="status_idle">退席中</string>
+    <string name="status_focus">集中</string>
+    <string name="status_focus_explainer">メッセージの通知は受け取りませんが、@メンションの通知は受け取ります。</string>
+    <string name="status_dnd">取り込み中</string>
+    <string name="status_dnd_explainer">メッセージや@メンションを含む通知を受け取りません。</string>
+    <string name="status_offline">オフライン</string>
+    <string name="status_invisible">非表示</string>
+    <string name="status_invisible_explainer">Stoatは通常どおり使用できますが、他の人にはオンラインとして表示されません。</string>
+    <string name="status_text_none">最近どう？</string>
+    <string name="status_text">ステータステキスト</string>
+    <string name="status_text_explainer">ステータステキストは全員に表示されます。短くわかりやすくしましょう。</string>
+    <string name="status_text_placeholder">今していることを世界に伝えましょう</string>
+    <string name="status_text_error_too_long">ステータステキストが長すぎます。%1$d文字未満に収めてください。</string>
+    <string name="status_text_error_other">ステータステキストの更新中にエラーが発生しました。後でもう一度お試しください。</string>
+
+    <string name="no_connection">接続がありません</string>
+    <string name="no_connection_message">インターネットに接続されていません。接続を確認してもう一度お試しください。</string>
+    <string name="tap_to_retry">タップして再試行</string>
+
+    <string name="scroll_to_bottom">一番下へスクロール</string>
     <string name="settings">設定</string>
+
+    <string name="copy">コピー</string>
+    <string name="copied">クリップボードにコピーしました</string>
+
+    <string name="programming_language_default">プレーンテキスト</string>
+
+    <string name="programming_language_snippet">[%1$sのスニペット]</string>
+    <string name="programming_language_snippet_default">[コードスニペット]</string>
+
+    <string name="server_flag_official">公式サーバー</string>
+    <string name="server_flag_verified">認証済みサーバー</string>
+
+    <string name="channel_link_invalid">このチャンネルを表示できません</string>
+    <string name="channel_link_invalid_description">このチャンネルは削除されたか、表示する権限がない可能性があります。</string>
+
+    <string name="emote_info_from_server">%1$sから</string>
+    <string name="emote_info_from_server_unknown">非公開サーバーから</string>
+    <string name="emote_info_from_unicode">どこでも使える標準絵文字</string>
+
     <string name="channel_info_sheet_description">チャンネルの説明</string>
+    <string name="channel_info_sheet_description_empty">このチャンネルにはまだ説明が設定されていません。</string>
     <string name="channel_info_sheet_options">オプション</string>
     <string name="channel_info_sheet_options_members">メンバー</string>
+    <string name="channel_info_sheet_options_invite">招待</string>
+    <string name="channel_info_sheet_options_add">メンバーを追加</string>
     <string name="channel_info_sheet_options_notifications_manage">通知を管理</string>
+
+    <string name="invite_dialog_header">#%1$sに招待</string>
+    <string name="invite_dialog_description">このリンクを送って、このチャンネルに招待できます。</string>
+    <string name="invite_dialog_copy">コピー</string>
+    <string name="invite_dialog_close">閉じる</string>
+
+    <string name="pinned_messages">ピン留めされたメッセージ</string>
+    <string name="pinned_messages_view">ピン留めされたメッセージを表示</string>
+    <string name="pinned_messages_empty">ピン留めされたメッセージはまだありません。何かピン留めしてみませんか？</string>
+
     <string name="message_context_sheet_actions_copy">コピー</string>
+    <string name="message_context_sheet_actions_copy_failed_empty">メッセージが空のため、コピーするものがありません</string>
     <string name="message_context_sheet_actions_reply">返信</string>
     <string name="message_context_sheet_actions_edit">編集</string>
     <string name="message_context_sheet_actions_delete">削除</string>
     <string name="message_context_sheet_actions_delete_confirm">このメッセージを削除してもよろしいですか？</string>
     <string name="message_context_sheet_actions_delete_confirm_yes">はい</string>
+    <string name="message_context_sheet_actions_delete_confirm_no">いいえ</string>
+    <string name="message_context_sheet_actions_copy_id">IDをコピー</string>
+    <string name="message_context_sheet_actions_copy_id_copied">メッセージIDをクリップボードにコピーしました</string>
     <string name="message_context_sheet_actions_copy_link">リンクをコピー</string>
-    <string name="message_context_sheet_actions_copy_link_copied">リンクがクリップボードにコピーされました</string>
+    <string name="message_context_sheet_actions_copy_link_copied">メッセージリンクをクリップボードにコピーしました</string>
+    <string name="message_context_sheet_actions_react">リアクション</string>
     <string name="message_context_sheet_actions_report">報告</string>
+    <string name="message_context_sheet_actions_mark_unread">未読にする</string>
+
+    <string name="message_context_sheet_actions_delete_confirmation_title">メッセージを削除しますか？</string>
+    <string name="message_context_sheet_actions_delete_confirmation_body">永久に消えます（本当に長い間！）</string>
+    <string name="message_context_sheet_actions_delete_confirmation_yes">削除</string>
+    <string name="message_context_sheet_actions_delete_confirmation_no">残す</string>
+
+    <string name="channel_context_sheet_open">チャンネル操作を開く</string>
     <string name="channel_context_sheet_actions_copy_id">IDをコピー</string>
+    <string name="channel_context_sheet_actions_copy_id_copied">チャンネルIDをクリップボードにコピーしました</string>
+    <string name="channel_context_sheet_actions_mark_read">既読にする</string>
+
+    <string name="server_context_sheet_description_empty">このサーバーにはまだ説明が設定されていません。</string>
+
     <string name="server_context_sheet_actions_copy_id">IDをコピー</string>
-    <string name="server_context_sheet_actions_mark_read">既読としてマークする</string>
+    <string name="server_context_sheet_actions_copy_id_copied">サーバーIDをクリップボードにコピーしました</string>
+    <string name="server_context_sheet_actions_mark_read">既読にする</string>
+    <string name="server_context_sheet_actions_leave">退出</string>
+    <string name="server_context_sheet_actions_leave_confirm">%1$sから退出しますか？</string>
+    <string name="server_context_sheet_actions_leave_confirm_eyebrow">再び招待されるまで、再参加できません。</string>
+    <string name="server_context_sheet_actions_leave_confirm_yes">退出</string>
+    <string name="server_context_sheet_actions_leave_confirm_no">残る</string>
+    <string name="server_context_sheet_actions_leave_silently">静かに退出</string>
+    <string name="server_context_sheet_actions_report">報告</string>
+    <string name="server_context_sheet_moderators_early_disclaimer_title">サーバー設定をお探しですか？</string>
+    <string name="server_context_sheet_moderators_early_disclaimer_body">Androidアプリでのサーバー管理機能は現在開発中です。今のところ、サーバー管理にはWebアプリをご利用ください。</string>
+
+    <string name="user_info_sheet_open">ユーザー情報を開く</string>
+    <string name="user_info_sheet_user_not_found">このユーザーを解決できません</string>
+    <string name="user_info_sheet_user_not_found_description">このユーザーは削除されたか、表示する権限がない可能性があります。</string>
+    <string name="user_info_sheet_webhook">Webhookを見つけました！</string>
+    <string name="user_info_sheet_webhook_body">Webhookはインターネット上の他のサービスからの自動配信です。返信はできませんが、送られてくる内容を見ることはできます。</string>
+    <string name="user_info_sheet_webhook_learn_more">詳しく見る</string>
+    <string name="user_info_sheet_category_bio">自己紹介</string>
+    <string name="user_info_sheet_bio_empty">このユーザーはまだ自己紹介を設定していません。</string>
+    <string name="user_info_sheet_bio_not_found">このユーザーの自己紹介を取得できませんでした。同じサーバーにいるか、フレンドであることを確認してください。</string>
+    <string name="user_info_sheet_category_roles">ロール</string>
+    <string name="user_info_sheet_category_joined">参加日</string>
+    <string name="user_info_sheet_category_badges">バッジ</string>
+    <string name="user_info_sheet_category_owner">オーナー</string>
+    <string name="user_info_sheet_owner_not_found">オーナー情報を取得できませんでした</string>
+    <string name="user_info_sheet_add_friend">フレンドに追加</string>
+    <string name="user_info_sheet_send_message">メッセージを送信</string>
+    <string name="user_info_sheet_remove_friend">フレンドを削除</string>
+    <string name="user_info_sheet_accept_request">承認</string>
+    <string name="user_info_sheet_decline_request">拒否</string>
+    <string name="user_info_sheet_cancel_request">リクエストをキャンセル</string>
+    <string name="user_info_sheet_block">ブロック</string>
+    <string name="user_info_sheet_unblock">ブロック解除</string>
+    <string name="user_info_sheet_edit_profile">プロフィールを編集</string>
+    <string name="user_info_sheet_report">報告</string>
+    <string name="user_info_sheet_copy_id">IDをコピー</string>
+    <string name="user_info_sheet_failed_to_open_dm">このユーザーとのDMを開けませんでした。</string>
+    <string name="user_info_sheet_user_is_bot">これはBotです。</string>
+    <string name="user_info_sheet_user_is_bot_easter_egg">これはBotです。計画があります。</string>
+    <string name="user_info_sheet_category_status">ステータス</string>
+
+    <string name="member_context_sheet_open">メンバーオプションを開く</string>
+    <string name="member_context_sheet_remove_from_channel">%1$sから削除</string>
+
+    <string name="user_badge_developer">開発者</string>
+    <string name="user_badge_translator">翻訳者</string>
+    <string name="user_badge_supporter">サポーター</string>
+    <string name="user_badge_responsible_disclosure">責任ある開示</string>
+    <string name="user_badge_founder">創設者</string>
+    <string name="user_badge_platform_moderation">プラットフォームモデレーション</string>
+    <string name="user_badge_active_supporter">アクティブサポーター</string>
+    <string name="user_badge_early_adopter">早期利用者</string>
+
+    <string name="add_server_sheet_step_0_title">サーバーを追加</string>
+    <string name="add_server_sheet_step_0_description">サーバーは楽しいことが起きる場所です。友達とチャットしたり、ミームを共有したり、コミュニティを作ったりできます。</string>
+    <string name="add_server_sheet_step_0_join">招待コードまたはリンクで参加</string>
+    <string name="add_server_sheet_step_0_join_description">既存のサーバーに参加するための招待コードを持っています。</string>
+    <string name="add_server_sheet_step_0_create">新しいサーバーを作成</string>
+    <string name="add_server_sheet_step_0_create_description">まったく新しいサーバーを一から作成します。</string>
+    <string name="add_server_sheet_step_1j_title">招待で参加</string>
+    <string name="add_server_sheet_step_1j_description">招待コードまたはリンクがあれば、今すぐサーバーに参加できます。</string>
+    <string name="add_server_sheet_step_1j_examples_heading">招待コードの例:</string>
+    <string name="add_server_sheet_step_1j_label">招待コードまたはリンク</string>
+    <string name="add_server_sheet_step_1j_join">参加</string>
+    <string name="add_server_sheet_step_1c_title">サーバーを作成</string>
+    <string name="add_server_sheet_step_1c_description">名前やアイコンは後からいつでも変更でき、フレンドも後で招待できます。</string>
+    <string name="add_server_sheet_step_1c_name">サーバー名</string>
+    <string name="add_server_sheet_step_1c_name_placeholder">マイサーバー</string>
+    <string name="add_server_sheet_step_1c_name_error_range">サーバー名は最大%1$d文字までです。</string>
+    <string name="add_server_sheet_step_1c_error">サーバーの作成中にエラーが発生しました。後でもう一度お試しください。</string>
+    <string name="add_server_sheet_step_1c_create">作成</string>
+
+    <string name="discover">Stoatを見つける</string>
+
     <string name="report">報告</string>
     <string name="report_cancel">キャンセル</string>
-    <string name="report_message_preview">選択済みのメッセージ:</string>
-    <string name="report_message_bridge_notice">注意: このメッセージは他のプラットフォームから送信された可能性があります。このメッセージが送信されたプラットフォームで通報することをおすすめします。</string>
-    <string name="report_server_preview">選択済みのサーバー:</string>
-    <string name="report_user_preview">選択済みのユーザー:</string>
-    <string name="report_reason">理由</string>
-    <string name="report_reason_content_promotes_harm">危害を促進</string>
+
+    <string name="report_message_heading">このメッセージの問題点を教えてください</string>
+    <string name="report_message">このメッセージの報告にご協力いただきありがとうございます。あなたの報告は、送信者やサーバーのモデレーターには共有されません。</string>
+    <string name="report_message_preview">選択したメッセージ:</string>
+    <string name="report_message_bridge_notice">注意: このメッセージは別のプラットフォームから送信された可能性があります。送信元のプラットフォームでも報告することをおすすめします。</string>
+    <string name="report_server_heading">このサーバーの問題点を教えてください</string>
+    <string name="report_server">このサーバーの報告にご協力いただきありがとうございます。あなたの報告はサーバーのモデレーターには共有されません。</string>
+    <string name="report_server_preview">選択したサーバー:</string>
+    <string name="report_user_heading">このユーザーの問題点を教えてください</string>
+    <string name="report_user">このユーザーの報告にご協力いただきありがとうございます。あなたの報告は、ユーザーやサーバーのモデレーターには共有されません。</string>
+    <string name="report_user_preview">選択したユーザー:</string>
+
+    <string name="report_reason">カテゴリを選択</string>
+
+    <string name="report_reason_content_illegal">違法なコンテンツ</string>
+    <string name="report_reason_content_illegal_goods">薬物またはその他の違法商品</string>
+    <string name="report_reason_content_illegal_extortion">恐喝または脅迫</string>
+    <string name="report_reason_content_illegal_pornography">リベンジポルノまたは未成年の性的コンテンツ</string>
+    <string name="report_reason_content_illegal_hacking">違法なハッキングまたはクラッキング</string>
+    <string name="report_reason_content_extreme_violence">過度な暴力、ゴア表現、または動物虐待</string>
+    <string name="report_reason_content_promotes_harm">危害を助長</string>
+    <string name="report_reason_content_unsolicited_spam">未承諾の広告またはスパム</string>
+    <string name="report_reason_content_raid">レイドまたはスパム攻撃</string>
+    <string name="report_reason_content_spam_abuse">スパムまたは同様のプラットフォーム悪用</string>
+    <string name="report_reason_content_scams_fraud">詐欺または不正行為</string>
     <string name="report_reason_content_malware">マルウェアまたはフィッシング</string>
     <string name="report_reason_content_harassment">ハラスメントまたはネットいじめ</string>
     <string name="report_reason_content_other">その他</string>
-    <string name="report_reason_user_spam_abuse">スパムまたは類似のプラットフォームの悪用</string>
-    <string name="report_reason_user_inappropriate_content">不適切なコンテンツ (NSFWのような)</string>
-    <string name="report_reason_user_impersonation">成りすまし</string>
-    <string name="report_reason_user_ban_evasion">BANの回避</string>
+
+    <string name="report_reason_user_unsolicited_spam">未承諾の広告またはスパム</string>
+    <string name="report_reason_user_spam_abuse">スパムまたは同様のプラットフォーム悪用</string>
+    <string name="report_reason_user_inappropriate_content">不適切なコンテンツ（NSFWなど）</string>
+    <string name="report_reason_user_impersonation">なりすまし</string>
+    <string name="report_reason_user_ban_evasion">BAN回避</string>
+    <string name="report_reason_user_underage">プラットフォームを利用できる最低年齢に達していない</string>
     <string name="report_reason_user_other">その他</string>
+
     <string name="report_reason_additional">追加情報</string>
+    <string name="report_reason_additional_hint">調査に役立つ追加情報があれば入力してください。任意です。</string>
+
     <string name="report_submit">送信</string>
     <string name="report_submitting">報告中…</string>
-    <string name="report_submit_success">報告完了</string>
+    <string name="report_submit_success">報告しました</string>
+
+    <string name="report_submit_thanks">Stoatの安全維持にご協力いただきありがとうございます。できるだけ早く報告内容を確認します。</string>
+
+    <string name="report_submit_error_header">エラー</string>
+    <string name="report_submit_error">報告の送信中にエラーが発生しました。後でもう一度お試しください。</string>
+
     <string name="report_submit_close">閉じる</string>
-    <string name="report_block_no">ブロックしないでください</string>
+
+    <string name="report_block_question">このユーザーをブロックしますか？</string>
+    <string name="report_block_yes">ブロック</string>
+    <string name="report_block_no">ブロックしない</string>
+
+    <string name="link_type_no_intent">このリンクを処理できるアプリが見つかりません</string>
+    <string name="link_open">開く</string>
+
+    <string name="invite_message">このサーバーに招待されています。参加しますか？</string>
     <string name="invite_join">参加</string>
     <string name="invite_cancel">キャンセル</string>
+    <string name="invite_open_server">開く</string>
+    <string name="invite_already_member">あなたはすでにこのサーバーのメンバーです。</string>
     <string name="invite_error_header">エラーが発生しました</string>
+    <string name="invite_error_no_invite">招待コードが指定されていません。</string>
+    <string name="invite_error_invalid_invite">指定されたコードの招待が見つかりませんでした。</string>
     <string name="invite_error_banned">あなたはこのサーバーからBANされています。</string>
+    <string name="invite_error_unknown">不明なエラーが発生しました。</string>
+
     <string name="media_viewer_title_image">%1$s</string>
     <string name="media_viewer_title_video">%1$s</string>
-    <string name="media_viewer_pause">停止</string>
-    <string name="media_viewer_saved">保存済み</string>
+    <string name="media_viewer_play">再生</string>
+    <string name="media_viewer_pause">一時停止</string>
+    <string name="media_viewer_more">その他…</string>
+    <string name="media_viewer_save">保存</string>
+    <string name="media_viewer_saved">保存しました</string>
     <string name="media_viewer_save_failed_audio">音声の保存に失敗しました</string>
+    <string name="media_viewer_save_failed_video">動画の保存に失敗しました</string>
+    <string name="media_viewer_save_failed_image">画像の保存に失敗しました</string>
     <string name="media_viewer_open">開く</string>
+    <string name="media_viewer_share_url">URLを共有</string>
     <string name="media_viewer_share_audio">音声を共有</string>
     <string name="media_viewer_share_video">動画を共有</string>
     <string name="media_viewer_share_image">画像を共有</string>
+
+    <string name="colour_picker_mode_sliders">スライダー</string>
+    <string name="colour_picker_mode_palette">パレット</string>
+    <string name="colour_picker_hue">色相</string>
+    <string name="colour_picker_hue_value_fmt">%1$d°</string>
+    <string name="colour_picker_saturation">彩度</string>
+    <string name="colour_picker_value">明度</string>
+    <string name="colour_picker_red">赤</string>
+    <string name="colour_picker_green">緑</string>
+    <string name="colour_picker_blue">青</string>
+    <string name="colour_picker_hex">Hex</string>
+    <string name="colour_picker_hex_use">使用</string>
+    <string name="colour_picker_alpha">アルファ</string>
+    <string name="colour_picker_preview">プレビュー</string>
+    <string name="colour_picker_use_default">デフォルトを使用</string>
+    <string name="colour_picker_cancel">キャンセル</string>
+    <string name="colour_picker_apply">適用</string>
+
+    <string name="file_picker_chip_photo_picker">写真を選択</string>
+    <string name="file_picker_chip_documents">ファイル</string>
+    <string name="file_picker_chip_camera">カメラ</string>
+    <string name="file_picker_chip_camera_none_installed">カメラアプリがインストールされていません</string>
+    <string name="file_picker_chip_camera_failed">カメラを開けませんでした</string>
+
+    <string name="inline_media_picker_current_description">現在選択中のメディア</string>
+    <string name="inline_media_picker_no_media_placeholder">メディアを選択…</string>
+    <string name="inline_media_picker_remove">削除</string>
+
+    <string name="corner_radius_picker_sharp">角ばった</string>
+    <string name="corner_radius_picker_rounded">丸み</string>
+    <string name="corner_radius_picker_circular">円形</string>
+    <string name="corner_radius_picker_other">その他</string>
+    <string name="corner_radius_picker_choose_radius">半径を選択</string>
+    <string name="corner_radius_picker_choose_radius_yes">使用</string>
+    <string name="corner_radius_picker_choose_radius_cancel">キャンセル</string>
+
+    <string name="emoji_picker_close_skin_tone_menu">肌の色メニューを閉じる</string>
+    <string name="emoji_picker_skin_tone_none">肌の色なし</string>
+    <string name="emoji_picker_skin_tone_fitzpatrick_1_2">明るい肌の色</string>
+    <string name="emoji_picker_skin_tone_fitzpatrick_3">やや明るい肌の色</string>
+    <string name="emoji_picker_skin_tone_fitzpatrick_4">中間の肌の色</string>
+    <string name="emoji_picker_skin_tone_fitzpatrick_5">やや暗い肌の色</string>
+    <string name="emoji_picker_skin_tone_fitzpatrick_6">暗い肌の色</string>
+    <string name="emoji_picker_search_results_header">検索結果</string>
+    <string name="emoji_picker_clear_search">検索をクリア</string>
+
+    <string name="voice_join_offering">ボイスチャンネルに参加</string>
+    <string name="voice_join_offering_description_zero">通話を開始</string>
+    <string name="voice_join_offering_description_one">%1$sと</string>
+    <string name="voice_join_offering_description_other">他%1$d人と</string>
+    <string name="voice_join_permission_rationale_heading">権限が必要です</string>
+    <string name="voice_join_permission_rationale_description">ボイスチャンネルに参加するには、次の権限を許可する必要があります:</string>
+    <string name="voice_join_permission_rationale_permission_mic">ミュート解除時に他の人があなたの声を聞けるようにするためのマイク</string>
+    <string name="voice_join_permission_rationale_permission_camera">動画を共有したい場合に他の人があなたを見られるようにするためのカメラ</string>
+    <string name="voice_join_permission_rationale_assurance">ご安心ください。許可なくマイクやカメラを使用することはありません。</string>
+    <string name="voice_join_permission_rationale_cta">権限を許可</string>
+
+    <string name="voice_error_not_supported">現在、ボイスチャンネルは利用できません。</string>
+    <string name="voice_error_no_nodes">現在、すべてのボイスノードが利用できません。後でもう一度お試しください。</string>
+    <string name="voice_error_generic">エラーが発生しました。後でもう一度お試しください。</string>
+
+    <string name="voice_muted">ミュート中</string>
+    <string name="voice_deafened">スピーカーミュート中</string>
+    <string name="voice_screen_sharing">画面を共有中</string>
+    <string name="voice_camera_on">カメラオン</string>
+
+    <string name="voice_action_disconnect">切断</string>
+
+    <string name="voice_status_connecting">接続中…</string>
+    <string name="voice_status_reconnecting">再接続中…</string>
+    <string name="voice_status_connected">接続済み</string>
+    <string name="voice_status_disconnected">接続がありません</string>
+
+    <string name="spark_notifications_rationale">最新情報を受け取る</string>
+    <string name="spark_notifications_rationale_description">通知を有効にすると、メッセージやメンションの最新情報を受け取れます。</string>
+    <string name="spark_notifications_rationale_cta">通知を有効にする</string>
+    <string name="spark_notifications_rationale_dismiss">今はしない</string>
+
+    <string name="spark_keyboard_shortcuts">キーボードを使用していますか？</string>
+    <string name="spark_keyboard_shortcuts_description">Stoatにはキーボードショートカットがあります！%1$sを押すと表示できます。</string>
+    <string name="spark_keyboard_shortcuts_cta">ショートカットを開く</string>
+    <string name="spark_keyboard_shortcuts_dismiss">了解</string>
+
+    <string name="spark_early_access">早期アクセスへようこそ！ 🚀</string>
+    <string name="spark_early_access_description_1">新しいAndroidアプリを最初に試すユーザーのひとりです。参加していただきありがとうございます！</string>
+    <string name="spark_early_access_description_2">早期アクセスのため、まだ完璧ではない部分があります。時々バグ、クラッシュ、奇妙な挙動に遭遇するかもしれません。あなたのフィードバックは、粗い部分を整え、Stoatをさらに良くする助けになります。</string>
+    <string name="spark_early_access_description_3">参加していただけて嬉しいです。一緒に良いものを作りましょう！</string>
+    <string name="spark_early_access_cta">了解</string>
+
+    <string name="spark_swipe_to_reply">スワイプ返信が利用可能になりました。</string>
+    <string name="spark_swipe_to_reply_description">メッセージスレッドの作成がこれまでになく簡単になりました。\n任意のメッセージを左にスワイプするだけです。\n一度に最大5件のメッセージへ返信できます。</string>
+    <string name="spark_swipe_to_reply_cta">了解</string>
+    <string name="spark_swipe_to_reply_customise">クイック返信をカスタマイズ</string>
+
+    <string name="hint_provide_feedback">フィードバックをお待ちしています！</string>
+    <string name="hint_provide_feedback_description">フィードバック、提案、バグ報告があればお知らせください。Stoatを改善する方法を常に探しています。</string>
+    <string name="hint_provide_feedback_cta">Google Playで評価</string>
+    <string name="hint_provide_feedback_join_server">Testersサーバーに参加</string>
+    <string name="hint_provide_feedback_dismiss">完了</string>
+
+    <string name="notice_platform_mod_dm_title">アカウントに関する重要なお知らせ</string>
+    <string name="notice_platform_mod_dm_description">モデレーションチームからアカウントに関する重要なお知らせを受け取りました。内容をよく確認してください。</string>
+    <string name="notice_platform_mod_dm_acknowledge">表示</string>
+
+    <string name="settings_category_account">アカウント</string>
     <string name="settings_category_general">一般</string>
-    <string name="settings_category_miscellaneous">いろいろな</string>
+    <string name="settings_category_miscellaneous">その他</string>
+
+    <string name="settings_account">ログインとセキュリティ</string>
+    <string name="settings_account_email">メール</string>
+    <string name="settings_account_email_loading_error">メールの読み込みに失敗しました</string>
+    <string name="settings_account_email_edit_alt">メールを変更</string>
+    <string name="settings_account_email_edit_title">メールを変更</string>
+    <string name="settings_account_email_edit_current">現在のメールアドレスは%1$sです。</string>
+    <string name="settings_account_email_edit_message">新しいメールアドレスと現在のアカウントパスワードを入力してください。</string>
+    <string name="settings_account_email_edit_new_email">新しいメールアドレス</string>
+    <string name="settings_account_email_edit_password">現在のパスワード</string>
+    <string name="settings_account_email_edit_confirm">変更</string>
+    <string name="settings_account_email_edit_cancel">現在のままにする</string>
+    <string name="settings_account_email_confirm_email">もうひとつ</string>
+    <string name="settings_account_email_confirm_email_message">新しいメールアドレスを確認するメールを送信しました。そのメール内のリンクをクリックして変更を完了してください。</string>
+    <string name="settings_account_email_confirm_email_open_mail_app">メールアプリを開く</string>
+    <string name="settings_account_email_confirm_email_dismiss">了解</string>
+    <string name="settings_account_password">パスワード</string>
+    <string name="settings_account_password_edit_alt">パスワードを変更</string>
+    <string name="settings_account_password_edit_title">パスワードを変更</string>
+    <string name="settings_account_password_edit_message">現在のパスワードと新しいパスワードを入力してください。</string>
+    <string name="settings_account_password_edit_message_hint">安全なパスワードは10文字以上で、文字、数字、記号を組み合わせます。</string>
+    <string name="settings_account_password_edit_new_password">新しいパスワード</string>
+    <string name="settings_account_password_edit_current_password">現在のパスワード</string>
+    <string name="settings_account_password_edit_confirm">変更</string>
+    <string name="settings_account_password_edit_cancel">現在のままにする</string>
+    <string name="settings_account_password_change_success">パスワードを変更しました。</string>
+    <string name="settings_account_mfa">二要素認証</string>
+    <string name="settings_account_mfa_warning">2FA方式が設定されていません。アカウントのセキュリティを強化するため、2FAの設定をおすすめします。</string>
+    <string name="settings_account_mfa_totp">認証アプリ</string>
+    <string name="settings_account_mfa_totp_upsell">Google AuthenticatorやAuthyなどのアプリからの6桁コードでアカウントを保護します。</string>
+    <string name="settings_account_mfa_totp_manage_alt">認証アプリを管理</string>
+
+    <string name="settings_mfa">二要素認証</string>
+    <string name="settings_mfa_totp">認証アプリ</string>
+
+    <string name="settings_profile">プロフィール</string>
+    <string name="settings_profile_profile_picture">プロフィール画像</string>
+    <string name="settings_profile_custom_background">カスタム背景</string>
+    <string name="settings_profile_save">保存</string>
+
+    <string name="settings_sessions">セッション</string>
+    <string name="settings_sessions_this_device">このデバイス</string>
+    <string name="settings_sessions_this_device_unavailable">このデバイスのセッションを利用できません。現在のセッションを表示するには**もう一度ログイン**してください。</string>
+    <string name="settings_sessions_other_sessions">他のアクティブなセッション</string>
+    <string name="settings_sessions_first_seen">初回確認 %1$s</string>
+    <string name="settings_sessions_log_out_other">他のセッションからログアウト</string>
+    <string name="settings_sessions_log_out_other_description">このデバイスはログインしたままになります。</string>
+    <string name="settings_sessions_log_out_other_confirm">他のすべてのセッションからログアウトしますか？</string>
+    <string name="settings_sessions_log_out_other_confirm_yes">ログアウト</string>
+    <string name="settings_sessions_log_out_other_confirm_no">ログインしたままにする</string>
+
+    <string name="settings_appearance">外観</string>
     <string name="settings_appearance_theme">テーマ</string>
     <string name="settings_appearance_theme_none">システム</string>
-    <string name="settings_appearance_theme_m3dynamic">マテリアル ユー</string>
-    <string name="settings_feedback">フィードバック</string>
-    <string name="community_guidelines">コミュニティガイドライン</string>
-    <string name="resend_verification">認証メールを再送します</string>
-    <string name="password_forgot_heading">パスワードをお忘れですか？</string>
-    <string name="password_forgot_instructions">メールアドレスを入力するとパスワードの再設定方法を送ります。</string>
-    <string name="register_email">メール</string>
-    <string name="register_email_verification_hint">あなたのアカウントを認証するためにメールを送信します。</string>
-    <string name="check_mail">メールを確認してください！</string>
-    <string name="onboarding_others">他の人はこの名前であなたを見つけ、認識し、言及するでしょう。</string>
-    <string name="mfa_totp_lead">Authenticatorアプリからの六桁の認証コードを入力してください。</string>
-    <string name="mfa_recovery_lead">回復コードの一つを入力してください。</string>
-    <string name="mfa_recovery_code">コード</string>
-    <string name="mfa_password_lead">続行するためにパスワードを入力してください。</string>
-    <string name="oss_attribution">オープンソースソフトウェアの帰属</string>
-    <string name="typing_one">%1$sが入力中…</string>
-    <string name="typing_many">%1$sらが入力中…</string>
-    <string name="typing_several">複数人が入力中</string>
-    <string name="unknown">不明</string>
-    <string name="logout">ログアウト</string>
-    <string name="no_channels_heading">少し気まずい。</string>
-    <string name="no_channels_body">このサーバーにはチャンネルがなく、ウェルカムチャンネルさえありません。なんて失礼なんだ。</string>
-    <string name="no_active_channel_body">開始するには左からサーバーを選択してください。冒険好きならサーバーを新規作成できます。</string>
-    <string name="start_of_conversation">これがあなたの会話の始まりです</string>
-    <string name="message_field_placeholder_dm">メッセージ @%1$s</string>
-    <string name="message_field_placeholder_voice">メッセージ #%1$s</string>
-    <string name="reply_message_empty_has_attachments">添付ファイルを送信済み</string>
-    <string name="yesterday">昨日</string>
-    <string name="x_days_ago">%1$d日前</string>
-    <string name="no_connection">接続がありません</string>
-    <string name="no_connection_message">インターネットに接続されていません。接続を確認して再試行してください。</string>
-    <string name="copy">コピー</string>
-    <string name="copied">クリップボードにコピーしました</string>
-    <string name="channel_info_sheet_description_empty">このチャンネルの説明はまだ設定されていません。</string>
-    <string name="channel_info_sheet_options_invite">招待</string>
-    <string name="message_context_sheet_actions_copy_failed_empty">メッセージは空で、コピーするものはありません</string>
-    <string name="message_context_sheet_actions_delete_confirm_no">いいえ</string>
-    <string name="message_context_sheet_actions_copy_id">IDをコピー</string>
-    <string name="message_context_sheet_actions_copy_id_copied">メッセージIDがクリップボードにコピーされました</string>
-    <string name="message_context_sheet_actions_react">反応</string>
-    <string name="message_context_sheet_actions_mark_unread">未読としてマークする</string>
-    <string name="channel_context_sheet_actions_copy_id_copied">チャンネルIDがクリップボードにコピーされました</string>
-    <string name="channel_context_sheet_actions_mark_read">既読としてマークする</string>
-    <string name="server_context_sheet_actions_copy_id_copied">サーバーIDがクリップボードにコピーされました</string>
-    <string name="report_message">このメッセージを報告するために時間をとっていただきありがとうございます。このメッセージを報告する理由を入力してください。</string>
-    <string name="report_server">このサーバーを報告するために時間をとっていただきありがとうございます。このサーバーを報告する理由を入力してください。</string>
-    <string name="report_user">このユーザーを報告するために時間をとっていただきありがとうございます。このユーザーを報告する理由を入力してください。</string>
-    <string name="report_reason_content_illegal">違法なコンテンツ</string>
-    <string name="report_reason_content_spam_abuse">スパムまたは類似のプラットフォームの悪用</string>
-    <string name="report_reason_user_underage">プラットフォームを使うための対象年齢未満のユーザー</string>
-    <string name="report_reason_additional_hint">調査に役立つ追加情報。オプション。</string>
-    <string name="report_submit_error_header">エラー</string>
-    <string name="report_submit_thanks">Revoltを安全に保つために手助けしていただきありがとうございます。できるだけ早くあなたのレポートを見直します。</string>
-    <string name="report_block_question">このユーザーをブロックしますか？</string>
-    <string name="report_block_yes">ブロック</string>
-    <string name="invite_message">あなたはこのサーバーに招待されました。参加しますか？</string>
-    <string name="invite_already_member">あなたは既にこのサーバーのメンバーです。</string>
-    <string name="invite_error_no_invite">招待コードが指定されていません。</string>
-    <string name="invite_error_invalid_invite">指定されたコードで招待が見つかりません。</string>
-    <string name="invite_error_unknown">不明なエラーが発生しました。</string>
-    <string name="media_viewer_play">再生</string>
-    <string name="media_viewer_more">もっと…</string>
-    <string name="media_viewer_save">保存</string>
-    <string name="media_viewer_save_failed_video">動画の保存に失敗しました</string>
-    <string name="media_viewer_save_failed_image">画像の保存に失敗しました</string>
-    <string name="media_viewer_share_url">URLを共有</string>
-    <string name="settings_appearance">外観</string>
-    <string name="settings_appearance_theme_revolt">Revolt</string>
+    <string name="settings_appearance_theme_default">Stoat</string>
     <string name="settings_appearance_theme_light">ライト</string>
     <string name="settings_appearance_theme_amoled">ピュアブラック</string>
-    <string name="settings_appearance_theme_m3dynamic_unsupported">マテリアル ユー (未対応)</string>
-    <string name="settings_appearance_theme_m3dynamic_unsupported_toast">マテリアル ユーはこのデバイスでサポートされていません。</string>
-    <string name="report_submit_error">レポートの送信中にエラーが発生しました。後でやり直してください。</string>
-    <string name="login_onboarding_body">Revoltは、いつでもどこでも、友人やコミュニティとのつながりを維持するための最良の方法の1つです。</string>
-    <string name="register_instructions">たむろしたり、集まったり、話したりするための場所のようなものです。インターネット上にあることが素晴らしいです。</string>
-    <string name="instructions_at_mail">%1$sにさらなる指示を送りました。</string>
-    <string name="hide_password">パスワードを非表示</string>
-    <string name="show_password">パスワードを表示</string>
-    <string name="service_health_alert">現在進行中</string>
-    <string name="service_health_alert_body_default">現在、サービスに問題が発生しております。詳しくはステータスページをご確認ください。</string>
-    <string name="service_health_alert_actions_default">さらに詳しく</string>
-    <string name="service_health_alert_actions_dismiss">解任</string>
-    <string name="could_not_log_in_heading">ログインに問題が発生しました</string>
-    <string name="could_not_log_in_body">他のデバイスからログアウトしたか、インターネットが切断されている可能性があります。</string>
-    <string name="could_not_log_in_cta_try_again">もう一度お試し下さい</string>
-    <string name="could_not_log_in_cta_logout">ログアウト</string>
-    <string name="about_tab_version">バージョン</string>
-    <string name="about_brought_to_you_by">Revoltチームが❤️を込めてお届けします。</string>
-    <string name="oss_attribution_body">Revoltは、これらの素晴らしいオープンソースプロジェクトの助けを借りて構築されています。</string>
-    <string name="emoji_category_symbols">シンボル</string>
-    <string name="home_join_jenvolt_description">JenvoltはAndroidアプリなどあらゆるものを扱う開発者が運営するスペースです。サポートやフィードバックはこちらです。新しい機能を試すことができるかもしれません! 👀</string>
-    <string name="about_full_name">Android版 Revolt</string>
-    <string name="about_tab_details">詳細</string>
-    <string name="oss_attribution_warning">以下のリストは自動生成されたものです。不完全または不正確な可能性があります。</string>
-    <string name="oss_attribution_generation_date">最後のアップデート:%1$s</string>
-    <string name="oss_attribution_tap_to_view_license">タップしてライセンスを表示</string>
-    <string name="pick_emoji_alt">絵文字を選ぶ</string>
-    <string name="attachment_preview_remove">消す</string>
-    <string name="attachment_preview_close">閉じる</string>
-    <string name="emoji_category_smileys">笑顔と感情</string>
-    <string name="emoji_category_people">人と体</string>
-    <string name="emoji_category_animals">動物と自然</string>
-    <string name="emoji_category_food">食べ物と飲み物</string>
-    <string name="emoji_category_travel">旅と場所</string>
-    <string name="emoji_category_activities">アクティビティー</string>
-    <string name="emoji_category_objects">オブジェクト</string>
-    <string name="emoji_category_flags">旗</string>
-    <string name="badge_platform_moderation_alt">プラットフォームのモデレーション</string>
-    <string name="badge_team_member_alt">Revoltチームのメンバー</string>
-    <string name="badge_webhook_alt">ウェブフック</string>
-    <string name="home_join_jenvolt">Jenvoltに参加する</string>
-    <string name="overview_screen_error">概要を読み込めませんでした</string>
-    <string name="overview_screen_error_description">後でもう一度お試しください。</string>
-    <string name="overview_screen_settings">設定を開く</string>
-    <string name="overview_screen_settings_description">見た目の変更、アカウントの管理、その他</string>
-    <string name="overview_screen_share_profile">プロフィールを共有</string>
-    <string name="create_group">新しいグループを組む</string>
-    <string name="create_group_description">グループの会話で友達を集めます。%1$dまでの人を追加できます。</string>
-    <string name="channel_age_gate_dob_proceed">進む</string>
-    <string name="channel_age_gate_dob_too_young">このチャンネルを見るために18歳以上になっていなければいけません。</string>
-    <string name="message_field_denied_no_permission">このチャンネルでメッセージの権限がありません。</string>
-    <string name="friends">友達</string>
-    <string name="rate_limit_toast">ちょっと待って！短時間でそれをしすぎています。</string>
-    <string name="oss_attribution_body_2">それらのプロジェクトのデベロッパーに世界中に公開してくれるために感謝しています 。</string>
-    <string name="overview_screen_title">自分</string>
-    <string name="overview_screen_share_profile_description">自分のユーザーカードを見て共有ために独自のリンクを受ける</string>
-    <string name="overview_screen_changelog">変更履歴</string>
-    <string name="overview_screen_changelog_description">Revoltは決して眠れない、取り組んでいたことのために見てみてください</string>
-    <string name="overview_screen_feedback">フィードバックをあげる</string>
-    <string name="overview_screen_feedback_description">言いたいことがありますか？聞かせてください</string>
-    <string name="user_card_tap_to_copy">コピーのためにタップ</string>
-    <string name="user_card_error_sharing">ユーザーカードを共有しながらエラーが起こりました。</string>
-    <string name="user_card_data_point_display_name">%1$d.名前</string>
-    <string name="user_card_data_point_username">%1$d.ユーザー名</string>
-    <string name="user_card_data_point_qrcode">%1$d.QRコード</string>
-    <string name="user_card_data_point_photo">%1$d.画像</string>
-    <string name="friends_incoming_requests">来たリクエスト</string>
-    <string name="friends_outgoing_requests">行ったリクエスト</string>
-    <string name="friends_all">すべて</string>
-    <string name="friends_deny_all_incoming">すべての来たリクエストを消す</string>
-    <string name="friends_blocked">ブロック</string>
-    <string name="channel_age_gate_dob_cancel">キャンセル</string>
-    <string name="main_tab_communities">コミュニティ</string>
-    <string name="main_tab_conversations">会話</string>
-    <string name="main_tab_overview">自分</string>
-    <string name="create_group_name">グループ名</string>
-    <string name="create_group_search">友達を検索</string>
-    <string name="create_group_action">作成</string>
-    <string name="discover_alt">探す</string>
-    <string name="channel_age_gate_title">このチャンネルはNSFWをつけらせた</string>
-    <string name="channel_age_gate_description">チャンネルを見るために18歳以上になっていなければいけません。</string>
-    <string name="channel_age_gate_dob_section">生年月日</string>
-    <string name="channel_age_gate_dob_day">日</string>
-    <string name="channel_age_gate_dob_month">月</string>
-    <string name="channel_age_gate_dob_year">年</string>
-    <string name="channel_age_gate_dob_invalid">生年月日を出てください</string>
-    <string name="channel_age_gate_dob_invalid_future">未来に生まれるのは無理です。</string>
-    <string name="channel_age_gate_dob_invalid_unlikely">%1$d以前に生まれるのは無理です。</string>
-    <string name="message_field_decoration_trusted_moderation_bot">ベリファイさせたモデレーションのボット</string>
-    <string name="message_field_denied_generic">このチャンネルでメッセージを送れません。</string>
-    <string name="message_field_denied_platform_moderation">これはモデレーションチームからの通知用の信頼できるチャンネルです。ここではメッセージを送れません。</string>
-    <string name="user_card_data_point_join_date">%1$d.Revoltにいるようになった日付</string>
-    <string name="swipe_to_reply_keep_swiping">返信</string>
-    <string name="status_invisible_explainer">普段通りRevoltを使えますが、他の人にはオンラインとして表示されません。</string>
-    <string name="status_focus_explainer">メッセージの通知は受け取れませんが、@メンションの通知は受け取れます。</string>
-    <string name="swipe_to_reply_release">放して返信</string>
-    <string name="status">ステータス</string>
-    <string name="status_online">オンライン</string>
-    <string name="status_idle">退席中</string>
-    <string name="status_focus">集中</string>
-    <string name="status_dnd">取り込み中</string>
-    <string name="status_dnd_explainer">メッセージや＠メンションを含む通知は受け取れません。</string>
-    <string name="status_offline">オフライン</string>
-    <string name="status_invisible">オンライン状態を隠す</string>
-    <string name="message_field_editing_message">メッセージを編集中</string>
-    <string name="message_field_editing_message_cancel_alt">編集をキャンセル</string>
-    <string name="message_blocked">ブロックされたメッセージ</string>
-    <string name="message_failed_to_send">送信に失敗しました、長押ししてオプションを表示</string>
-    <string name="message_embed_special_youtube_switch_alt">タップしてYouTubeからビデオを再生</string>
-    <string name="system_message_ownership_changed_alt">所有権が移転しました</string>
-    <string name="system_message_channel_icon_changed_alt">チャンネルアイコンが変わりました</string>
-    <string name="system_message_channel_description_changed_alt">チャンネルの説明が変わりました</string>
-    <string name="system_message_channel_renamed_alt">チャンネル名が変わりました</string>
-    <string name="system_message_user_removed_alt">ユーザーが削除されました</string>
-    <string name="system_message_user_added_alt">ユーザーが追加されました</string>
-    <string name="system_message_user_banned_alt">ユーザーが禁止されました</string>
-    <string name="system_message_user_kicked_alt">ユーザーがキックされました</string>
-    <string name="system_message_user_left_alt">ユーザーが抜けました</string>
-    <string name="system_message_user_joined_alt">ユーザーが参加しました</string>
-    <string name="system_message_text_alt">システムメッセージ</string>
-    <string name="system_message_ownership_changed">%1$sは所有権を%2$sに譲渡しました</string>
-    <string name="system_message_channel_icon_changed">%1$sがチャンネルのアイコンを変更しました</string>
-    <string name="system_message_channel_renamed">%1$s はチャンネル名を %2$s に変更しました</string>
-    <string name="system_message_user_removed">%1$sが%2$sを削除されました</string>
-    <string name="system_message_user_added">%1$sが%2$sを追加されました</string>
-    <string name="system_message_user_banned">%1$sが禁止されました</string>
-    <string name="system_message_user_kicked">%1$sがキックされました</string>
-    <string name="system_message_user_left">%1$sが抜けました</string>
-    <string name="system_message_channel_description_changed">%1$sがチャンネルの説明を変更しました</string>
-    <string name="friends_scan_qr_result_sheet_success_title">フレンドに追加？</string>
-    <string name="channel_info_sheet_options_add">メンバーに追加</string>
-    <string name="invite_dialog_copy">コピー</string>
-    <string name="friends_scan_qr_result_sheet_invalid_title">無効なQRコード</string>
-    <string name="message_context_sheet_actions_delete_confirmation_title">メッセージを削除？</string>
-    <string name="attachment_spoiler">ネタバレ</string>
+    <string name="settings_appearance_theme_m3dynamic">Material You</string>
+    <string name="settings_appearance_theme_m3dynamic_unsupported">Material You（未対応）</string>
+    <string name="settings_appearance_theme_m3dynamic_unsupported_toast">Material Youはこのデバイスではサポートされていません。</string>
+    <string name="settings_appearance_typeface">フォント</string>
+    <string name="settings_appearance_typeface_default">デフォルト</string>
+
+    <string name="settings_appearance_avatar_shape">プロフィール画像の形</string>
+    <string name="settings_appearance_avatar_shape_description">チャットやプロフィールを含むプロフィール画像の丸み具合を選択します。これはすべてのユーザーに適用されます。</string>
+
+    <string name="settings_appearance_colour_overrides">色の上書き</string>
+    <string name="settings_appearance_colour_overrides_primary">プライマリ</string>
+    <string name="settings_appearance_colour_overrides_on_primary">プライマリ上</string>
+    <string name="settings_appearance_colour_overrides_primary_container">プライマリコンテナ</string>
+    <string name="settings_appearance_colour_overrides_on_primary_container">プライマリコンテナ上</string>
+    <string name="settings_appearance_colour_overrides_inverse_primary">反転プライマリ</string>
+    <string name="settings_appearance_colour_overrides_secondary">セカンダリ</string>
+    <string name="settings_appearance_colour_overrides_on_secondary">セカンダリ上</string>
+    <string name="settings_appearance_colour_overrides_secondary_container">セカンダリコンテナ</string>
+    <string name="settings_appearance_colour_overrides_on_secondary_container">セカンダリコンテナ上</string>
+    <string name="settings_appearance_colour_overrides_tertiary">ターシャリ</string>
+    <string name="settings_appearance_colour_overrides_on_tertiary">ターシャリ上</string>
+    <string name="settings_appearance_colour_overrides_tertiary_container">ターシャリコンテナ</string>
+    <string name="settings_appearance_colour_overrides_on_tertiary_container">ターシャリコンテナ上</string>
+    <string name="settings_appearance_colour_overrides_background">背景</string>
+    <string name="settings_appearance_colour_overrides_on_background">背景上</string>
+    <string name="settings_appearance_colour_overrides_surface">サーフェス</string>
+    <string name="settings_appearance_colour_overrides_on_surface">サーフェス上</string>
+    <string name="settings_appearance_colour_overrides_surface_variant">サーフェスバリアント</string>
+    <string name="settings_appearance_colour_overrides_on_surface_variant">サーフェスバリアント上</string>
+    <string name="settings_appearance_colour_overrides_surface_tint">サーフェスティント</string>
+    <string name="settings_appearance_colour_overrides_inverse_surface">反転サーフェス</string>
+    <string name="settings_appearance_colour_overrides_inverse_on_surface">反転サーフェス上</string>
+    <string name="settings_appearance_colour_overrides_error">エラー</string>
+    <string name="settings_appearance_colour_overrides_on_error">エラー上</string>
+    <string name="settings_appearance_colour_overrides_error_container">エラーコンテナ</string>
+    <string name="settings_appearance_colour_overrides_on_error_container">エラーコンテナ上</string>
+    <string name="settings_appearance_colour_overrides_outline">アウトライン</string>
+    <string name="settings_appearance_colour_overrides_outline_variant">アウトラインバリアント</string>
+    <string name="settings_appearance_colour_overrides_scrim">スクリム</string>
+    <string name="settings_appearance_colour_overrides_export">エクスポート</string>
+    <string name="settings_appearance_colour_overrides_import">インポート</string>
+    <string name="settings_appearance_colour_overrides_import_error">このファイルは有効な色上書きファイルではありません。</string>
+
+    <string name="settings_chat">チャット</string>
+    <string name="settings_chat_quick_reply">クイック返信</string>
+    <string name="settings_chat_quick_reply_none">クイック返信なし</string>
+    <string name="settings_chat_quick_reply_none_description">どのメッセージのメニューからでも返信できます。</string>
+    <string name="settings_chat_quick_reply_swipe_from_end">スワイプして返信</string>
+    <string name="settings_chat_quick_reply_double_tap">ダブルタップして返信</string>
+    <string name="settings_chat_interactive_embeds">インタラクティブ埋め込み</string>
+    <string name="settings_chat_interactive_embeds_description">インタラクティブ埋め込みを使うと、一部のリンクをチャット内で直接操作できます。たとえば、YouTube動画を再生したり、Apple Musicのアルバムをプレビューしたりできます。</string>
+    <string name="settings_chat_interactive_embeds_youtube">YouTube</string>
+    <string name="settings_chat_interactive_embeds_apple_music">Apple Music</string>
+    <string name="settings_chat_hint_poorly_formed_settings_keys">ヒント</string>
+    <string name="settings_chat_hint_poorly_formed_settings_keys_description">一部のStoat設定が破損しています。サードパーティークライアントの使用が原因の可能性があります。影響を受けている設定:</string>
+    <string name="settings_chat_hint_poorly_formed_settings_keys_key_notifications">通知</string>
+    <string name="settings_chat_hint_poorly_formed_settings_keys_key_ordering">サーバーの並び順</string>
+    <string name="settings_chat_hint_poorly_formed_settings_keys_key_android">Stoat for Android</string>
+    <string name="settings_chat_hint_poorly_formed_settings_keys_key_release_notes">リリースノート</string>
+    <string name="settings_chat_hint_poorly_formed_settings_keys_key_unknown">%1$s（不明）</string>
+    <string name="settings_chat_hint_poorly_formed_settings_keys_reset">%1$s設定をリセット</string>
+
+    <string name="settings_notifications">通知</string>
+    <string name="settings_notifications_push">プッシュ通知</string>
+    <string name="settings_notifications_push_description">アプリを操作していないときでも、新しいメッセージ、メンション、その他の更新の通知を受け取ります。</string>
+    <string name="settings_notifications_system">システム設定</string>
+    <string name="settings_notifications_system_description">デバイスのシステム設定から通知権限や設定を管理します。</string>
+
+    <string name="settings_feedback">フィードバック</string>
+    <string name="settings_feedback_description">Stoatサーバーに参加して、フィードバックや提案、バグ報告を送れます。</string>
+
+    <string name="settings_changelog">新着情報</string>
+
+    <string name="settings_language">言語</string>
+    <string name="settings_language_auto">システム既定</string>
+
+    <string name="channel_settings">チャンネル設定</string>
+    <string name="channel_settings_header">#%1$s</string>
+    <string name="channel_settings_overview">概要</string>
+    <string name="channel_settings_overview_update_info_error_fallback">チャンネルの更新中にエラーが発生しました。</string>
+    <string name="channel_settings_overview_info">チャンネル情報</string>
+    <string name="channel_settings_overview_name">チャンネル名</string>
+    <string name="channel_settings_overview_description">チャンネルの説明</string>
+    <string name="channel_settings_overview_description_hint">このチャンネルは…についての会話専用です</string>
+    <string name="channel_settings_overview_nsfw">NSFWとしてマーク</string>
+    <string name="channel_settings_overview_nsfw_description">NSFWチャンネルに参加する前に、ユーザーは年齢確認を求められます。</string>
+    <string name="channel_settings_overview_nsfw_confirm_title">このチャンネルをNSFWとしてマークしますか？</string>
+    <string name="channel_settings_overview_nsfw_confirm_description">このチャンネルに参加する前に、ユーザーは年齢確認を求められます。</string>
+    <string name="channel_settings_overview_nsfw_confirm_yes">NSFWとしてマーク</string>
+    <string name="channel_settings_overview_nsfw_confirm_no">このままにする</string>
+    <string name="channel_settings_overview_nsfw_undo_confirm_title">このチャンネルのNSFWマークを解除しますか？</string>
+    <string name="channel_settings_overview_nsfw_undo_confirm_description">このチャンネルに参加する前に、ユーザーは年齢確認を求められなくなります。コンテンツが全年齢に適していることを確認してください。</string>
+    <string name="channel_settings_overview_nsfw_undo_confirm_yes">NSFWマークを解除</string>
+    <string name="channel_settings_overview_nsfw_undo_confirm_no">このままにする</string>
+    <string name="channel_settings_overview_save">保存</string>
+    <string name="channel_settings_permissions">権限</string>
+    <string name="channel_settings_delete">チャンネルを削除</string>
+    <string name="channel_settings_delete_confirm">このチャンネルを削除してもよろしいですか？</string>
+    <string name="channel_settings_delete_confirm_description">このチャンネルのすべてのメッセージと設定が永久に消えます（本当に長い間！）</string>
+    <string name="channel_settings_delete_confirm_yes">削除</string>
+    <string name="channel_settings_delete_confirm_no">残す</string>
+
+    <string name="share_target_heading">Stoatに共有</string>
+    <string name="share_target_login_first">Stoatに共有する前にログインしてください。</string>
+    <string name="share_target_invalid_intent">これは有効な共有インテントではありません。</string>
+    <string name="share_target_attachment_too_large">この添付ファイルはStoatには大きすぎます（最大 $1$s）。</string>
+    <string name="share_target_search_channels">チャンネルを検索</string>
+    <string name="share_target_select_channel">共有先のチャンネルを選択してください。</string>
+
+    <string name="notification_channel_group_conversations">会話</string>
+    <string name="notification_channel_group_social">フレンドとソーシャル</string>
+    <string name="notification_channel_friend_requests">フレンドリクエスト</string>
+    <string name="notification_channel_friend_requests_description">受信したフレンドリクエストと、送信したリクエストの承認。</string>
+    <string name="notification_channel_messages">メッセージ</string>
+    <string name="notification_channel_messages_description">会話やチャンネルの未読メッセージ。</string>
+
+    <string name="keyboard_shortcut_messaging">メッセージ</string>
+    <string name="keyboard_shortcut_messaging_new_line">改行</string>
+    <string name="keyboard_shortcut_messaging_send_message">メッセージを送信</string>
+
+    <string name="geogate_header">お住まいの地域では利用できません</string>
+    <string name="geogate_channel_icon_alt">利用できないチャンネル</string>
+    <string name="geogate_description">Stoatは、法律や法的通知に対応して、特定の管轄区域でコンテンツをブロックする場合があります</string>
+    <string name="geogate_acknowledge">確認</string>
+
+    <string name="changelog_header">新着情報</string>
+    <string name="changelog_load_error">変更履歴の読み込み中にエラーが発生しました。</string>
+    <string name="changelog_retry">再試行</string>
 </resources>
