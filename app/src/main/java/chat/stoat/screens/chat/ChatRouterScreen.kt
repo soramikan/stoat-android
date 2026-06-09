@@ -229,8 +229,12 @@ class ChatRouterViewModel(
 
                 val token = task.result
                 viewModelScope.launch {
-                    kvStorage.set("fcmToken", token)
-                    subscribePush(auth = token)
+                    runCatching {
+                        subscribePush(auth = token)
+                        kvStorage.set("fcmToken", token)
+                    }.onFailure {
+                        Sentry.captureException(it)
+                    }
                 }
             }
         )

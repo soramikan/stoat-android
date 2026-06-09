@@ -79,11 +79,8 @@ class NotificationsSettingsScreenViewModel(
                 val newToken = task.result
                 viewModelScope.launch {
                     try {
-                        val existingToken = kvStorage.get("fcmToken")
-                        if (existingToken != newToken) {
-                            subscribePush(auth = newToken)
-                            kvStorage.set("fcmToken", newToken)
-                        }
+                        subscribePush(auth = newToken)
+                        kvStorage.set("fcmToken", newToken)
                         kvStorage.remove("pushNotificationsRejected")
                         isPushEnabled = checkPushEnabled()
                     } catch (e: Exception) {

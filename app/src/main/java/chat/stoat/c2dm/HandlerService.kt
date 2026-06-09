@@ -22,6 +22,7 @@ import androidx.core.graphics.createBitmap
 import androidx.core.graphics.drawable.IconCompat
 import chat.stoat.BuildConfig
 import chat.stoat.R
+import chat.stoat.api.StoatAPI
 import chat.stoat.activities.MainActivity
 import chat.stoat.api.internals.ULID
 import chat.stoat.api.routes.channel.fetchSingleChannel
@@ -80,7 +81,17 @@ class HandlerService : FirebaseMessagingService() {
     override fun onNewToken(token: String) {
         super.onNewToken(token)
         runBlocking {
-            subscribePush(auth = token)
+            if (StoatAPI.sessionToken.isBlank()) {
+                logcat(LogPriority.INFO) { "Received FCM token before login; registration will be retried after sign-in" }
+                return@runBlocking
+            }
+
+            runCatching {
+                subscribePush(auth = token)
+                KVStorage(this@HandlerService).set("fcmToken", token)
+            }.onFailure {
+                logcat(LogPriority.ERROR) { "Failed to subscribe refreshed FCM token: ${it.message}" }
+            }
         }
     }
 
