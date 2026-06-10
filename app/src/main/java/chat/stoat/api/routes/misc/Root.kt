@@ -23,6 +23,7 @@ data class Features(
     @SerialName("invite_only") val inviteOnly: Boolean,
     val autumn: AutumnJanuaryFeature,
     val january: AutumnJanuaryFeature,
+    val limits: Limits? = null,
     val voso: LegacyVoiceFeature? = null,
     val livekit: LiveKitFeature? = null,
 )
@@ -31,6 +32,16 @@ data class Features(
 data class AutumnJanuaryFeature(
     val enabled: Boolean,
     val url: String
+)
+
+@Serializable
+data class Limits(
+    val global: GlobalLimits? = null
+)
+
+@Serializable
+data class GlobalLimits(
+    @SerialName("chunk_upload_size") val chunkUploadSize: Long? = null
 )
 
 @Serializable
