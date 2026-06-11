@@ -7,6 +7,7 @@ import chat.stoat.api.StoatJson
 import chat.stoat.api.api
 import chat.stoat.core.model.schemas.Member
 import chat.stoat.core.model.schemas.Server
+import chat.stoat.core.model.schemas.ServerUserChoice
 import chat.stoat.core.model.schemas.ServerWithChannelObjects
 import chat.stoat.core.model.schemas.User
 import io.ktor.client.request.delete
@@ -19,6 +20,7 @@ import io.ktor.client.request.setBody
 import io.ktor.client.statement.bodyAsText
 import io.ktor.http.ContentType
 import io.ktor.http.contentType
+import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.SerializationException
 import kotlinx.serialization.builtins.ListSerializer
@@ -30,6 +32,19 @@ import kotlinx.serialization.json.JsonElement
 data class FetchMembersResponse(
     val members: List<Member>,
     val users: List<User>
+)
+
+@Serializable
+data class Ban(
+    @SerialName("_id")
+    val id: ServerUserChoice,
+    val reason: String? = null
+)
+
+@Serializable
+data class BansResponse(
+    val users: List<User>,
+    val bans: List<Ban>
 )
 
 suspend fun ackServer(serverId: String) {
@@ -95,6 +110,28 @@ suspend fun fetchMember(serverId: String, userId: String, pure: Boolean = false)
     }
 
     return member
+}
+
+suspend fun fetchBans(serverId: String): BansResponse {
+    val response = StoatHttp.get("/servers/$serverId/bans".api())
+        .bodyAsText()
+
+    try {
+        val error = StoatJson.decodeFromString(StoatAPIError.serializer(), response)
+        throw Exception(error.type)
+    } catch (e: SerializationException) {
+        // Not an error
+    }
+
+    val bansResponse = StoatJson.decodeFromString(BansResponse.serializer(), response)
+    bansResponse.users.forEach { user ->
+        user.id?.let { StoatAPI.userCache.putIfAbsent(it, user) }
+    }
+    return bansResponse
+}
+
+suspend fun unbanUser(serverId: String, userId: String) {
+    StoatHttp.delete("/servers/$serverId/bans/$userId".api())
 }
 
 suspend fun leaveOrDeleteServer(serverId: String, leaveSilently: Boolean = false) {

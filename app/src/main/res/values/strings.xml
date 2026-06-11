@@ -440,6 +440,16 @@
     <string name="server_settings_members_search">Search members</string>
     <string name="server_settings_members_count">%1$d members</string>
     <string name="server_settings_members_error">Couldn\'t load members.</string>
+    <string name="server_settings_bans">Bans</string>
+    <string name="server_settings_bans_header">%1$s bans</string>
+    <string name="server_settings_bans_search">Search bans</string>
+    <string name="server_settings_bans_count">%1$d bans</string>
+    <string name="server_settings_bans_error">Couldn\'t load bans.</string>
+    <string name="server_settings_bans_no_reason">No ban reason.</string>
+    <string name="server_settings_bans_unban">Unban</string>
+    <string name="server_settings_bans_unban_confirm">Unban %1$s?</string>
+    <string name="server_settings_bans_unban_confirm_yes">Unban</string>
+    <string name="server_settings_bans_unban_confirm_no">Cancel</string>
     <string name="server_settings_delete">Delete server</string>
     <string name="server_settings_delete_confirm">Delete %1$s?</string>
     <string name="server_settings_delete_confirm_description">This server and its channels will be deleted for everyone. This cannot be undone.</string>

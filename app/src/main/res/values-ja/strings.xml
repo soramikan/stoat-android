@@ -414,6 +414,16 @@
     <string name="server_settings_members_search">メンバーを検索</string>
     <string name="server_settings_members_count">メンバー%1$d人</string>
     <string name="server_settings_members_error">メンバーを読み込めませんでした。</string>
+    <string name="server_settings_bans">BAN</string>
+    <string name="server_settings_bans_header">%1$sのBAN</string>
+    <string name="server_settings_bans_search">BANを検索</string>
+    <string name="server_settings_bans_count">BAN%1$d件</string>
+    <string name="server_settings_bans_error">BANを読み込めませんでした。</string>
+    <string name="server_settings_bans_no_reason">BAN理由はありません。</string>
+    <string name="server_settings_bans_unban">BANを解除</string>
+    <string name="server_settings_bans_unban_confirm">%1$sのBANを解除しますか？</string>
+    <string name="server_settings_bans_unban_confirm_yes">解除</string>
+    <string name="server_settings_bans_unban_confirm_no">キャンセル</string>
     <string name="server_settings_delete">サーバーを削除</string>
     <string name="server_settings_delete_confirm">%1$sを削除しますか？</string>
     <string name="server_settings_delete_confirm_description">このサーバーとチャンネルは全員から削除されます。この操作は元に戻せません。</string>

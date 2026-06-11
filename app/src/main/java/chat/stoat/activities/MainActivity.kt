@@ -125,6 +125,7 @@ import chat.stoat.screens.settings.channel.ChannelSettingsOverview
 import chat.stoat.screens.settings.channel.ChannelSettingsPermissions
 import chat.stoat.screens.settings.server.ServerSettingsHome
 import chat.stoat.screens.settings.server.ServerMembersSettings
+import chat.stoat.screens.settings.server.ServerBansSettings
 import chat.stoat.screens.settings.server.ServerSettingsOverview
 import chat.stoat.ui.theme.StoatTheme
 import com.google.android.material.color.DynamicColors
@@ -742,6 +743,10 @@ fun AppEntrypoint(
                     composable("settings/server/{serverId}/members") { backStackEntry ->
                         val serverId = backStackEntry.arguments?.getString("serverId") ?: ""
                         ServerMembersSettings(navController, serverId)
+                    }
+                    composable("settings/server/{serverId}/bans") { backStackEntry ->
+                        val serverId = backStackEntry.arguments?.getString("serverId") ?: ""
+                        ServerBansSettings(navController, serverId)
                     }
 
                     composable("channel/{channelId}/pins") { backStackEntry ->

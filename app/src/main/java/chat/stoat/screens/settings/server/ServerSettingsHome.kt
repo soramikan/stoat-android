@@ -170,6 +170,29 @@ fun ServerSettingsHome(navController: NavController, serverId: String) {
                             }
                     )
 
+                    if (permissions.hasPermission(PermissionBit.BanMembers)) {
+                        ListItem(
+                            headlineContent = {
+                                Text(
+                                    text = stringResource(id = R.string.server_settings_bans)
+                                )
+                            },
+                            leadingContent = {
+                                SettingsIcon {
+                                    Icon(
+                                        painter = painterResource(R.drawable.ic_gavel_24dp),
+                                        contentDescription = null,
+                                    )
+                                }
+                            },
+                            modifier = Modifier
+                                .testTag("server_settings_view_bans")
+                                .clickable {
+                                    navController.navigate("settings/server/$serverId/bans")
+                                }
+                        )
+                    }
+
                     if (server.owner == StoatAPI.selfId) {
                         ListItem(
                             headlineContent = {
