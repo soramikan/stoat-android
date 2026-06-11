@@ -1,8 +1,6 @@
 package chat.stoat.sheets
 
 import androidx.compose.foundation.ExperimentalFoundationApi
-import androidx.compose.foundation.clickable
-import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -15,15 +13,12 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.material3.AlertDialog
-import androidx.compose.material3.Button
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.LocalTextStyle
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.PrimaryScrollableTabRow
 import androidx.compose.material3.Tab
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -31,12 +26,10 @@ import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.PlatformTextStyle
 import androidx.compose.ui.text.font.FontWeight
@@ -48,15 +41,12 @@ import chat.stoat.api.StoatAPI
 import chat.stoat.api.internals.isUlid
 import chat.stoat.api.routes.custom.fetchEmoji
 import chat.stoat.api.routes.user.fetchUser
-import chat.stoat.api.settings.LoadedSettings
 import chat.stoat.composables.chat.MemberListItem
 import chat.stoat.composables.generic.RemoteImage
 import chat.stoat.core.model.data.STOAT_FILES
 import chat.stoat.core.model.schemas.Emoji
 import chat.stoat.core.model.schemas.User
 import chat.stoat.internals.text.MessageProcessor
-import chat.stoat.persistence.KVStorage
-import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
@@ -78,13 +68,10 @@ fun ReactionInfoSheet(messageId: String, emoji: String, onDismiss: () -> Unit) {
                 }
             }
 
-    val context = LocalContext.current
-    val scope = rememberCoroutineScope()
-
     val extendedEmojiInfo = remember(emoji) { mutableStateListOf<Emoji>() }
 
     LaunchedEffect(reactionEmoji) {
-        reactionEmoji?.forEach {
+        reactionEmoji.forEach {
             if (it.isUlid()) {
                 extendedEmojiInfo.add(StoatAPI.emojiCache[it] ?: fetchEmoji(it))
             }
@@ -149,71 +136,6 @@ fun ReactionInfoSheet(messageId: String, emoji: String, onDismiss: () -> Unit) {
             if (reactionEmoji.isNotEmpty() == true) {
                 val current = reactionEmoji[selectedReactionIndex]
 
-                // <editor-fold desc="Code related to enabling of experimental features">
-                val interactionSource = remember { MutableInteractionSource() }
-                val canBeUsedForTapCountIncrement =
-                    remember(selectedReactionIndex) {
-                        MessageProcessor.emoji.unicodeAsShortcode(
-                            current
-                        ) == ":trolleybus:"
-                    }
-                var tapCount by remember { mutableIntStateOf(0) }
-                var showEnabledConfirmAlert by remember { mutableStateOf(false) }
-                var showEnabledAlreadyAlert by remember { mutableStateOf(false) }
-                val incrementTapCount = remember {
-                    {
-                        if (canBeUsedForTapCountIncrement) {
-                            tapCount++
-                            if (tapCount > 9) {
-                                tapCount = 0
-                                if (LoadedSettings.experimentsEnabled) {
-                                    showEnabledAlreadyAlert = true
-                                } else {
-                                    showEnabledConfirmAlert = true
-                                }
-                            }
-                        }
-                    }
-                }
-
-                if (showEnabledAlreadyAlert) {
-                    AlertDialog(
-                        onDismissRequest = {},
-                        title = { Text("Traveller, you may not unsee your knowledge...") },
-                        text = { Text("Experimental features are already unlocked.") },
-                        confirmButton = {
-                            TextButton(onClick = { showEnabledAlreadyAlert = false }) {
-                                Text("OK")
-                            }
-                        }
-                    )
-                }
-
-                if (showEnabledConfirmAlert) {
-                    AlertDialog(
-                        onDismissRequest = {},
-                        title = { Text("You hear a faint whisper in the wind...") },
-                        text = { Text("Would you like to enable experimental features? They may be unstable.") },
-                        confirmButton = {
-                            TextButton(onClick = {
-                                showEnabledConfirmAlert = false
-                                LoadedSettings.experimentsEnabled = true
-                                scope.launch {
-                                    KVStorage(context).set("experimentsEnabled", true)
-                                }
-                            }) {
-                                Text("I dare to try!")
-                            }
-                        },
-                        dismissButton = {
-                            Button(onClick = { showEnabledConfirmAlert = false }) {
-                                Text("I shall not risk it.")
-                            }
-                        }
-                    )
-                }
-                // </editor-fold>
-
                 Column(
                     verticalArrangement = Arrangement.spacedBy(16.dp),
                     modifier = Modifier.padding(
@@ -252,12 +174,6 @@ fun ReactionInfoSheet(messageId: String, emoji: String, onDismiss: () -> Unit) {
                                         )
                                     ),
                                     modifier = Modifier
-                                        .clickable(
-                                            interactionSource = interactionSource,
-                                            indication = null,
-                                        ) {
-                                            incrementTapCount()
-                                        }
                                         .size(64.dp)
                                 )
                             }

@@ -35,7 +35,6 @@ import chat.stoat.BuildConfig
 import chat.stoat.R
 import chat.stoat.activities.InviteActivity
 import chat.stoat.api.StoatAPI
-import chat.stoat.api.settings.FeatureFlags
 import chat.stoat.api.settings.LoadedSettings
 import chat.stoat.composables.generic.ListHeader
 import chat.stoat.persistence.KVStorage
@@ -300,52 +299,6 @@ fun SettingsScreen(
                                 .testTag("settings_view_debug")
                                 .clickable {
                                     navController.navigate("settings/debug")
-                                }
-                        )
-                    }
-
-                    if (FeatureFlags.labsAccessControlGranted) {
-                        ListItem(
-                            headlineContent = {
-                                Text(
-                                    text = "Labs"
-                                )
-                            },
-                            leadingContent = {
-                                SettingsIcon {
-                                    Icon(
-                                        painter = painterResource(R.drawable.ic_sign_language_24dp),
-                                        contentDescription = null,
-                                    )
-                                }
-                            },
-                            modifier = Modifier
-                                .testTag("settings_view_labs")
-                                .clickable {
-                                    navController.navigate("labs")
-                                }
-                        )
-                    }
-
-                    if (LoadedSettings.experimentsEnabled) {
-                        ListItem(
-                            headlineContent = {
-                                Text(
-                                    text = "Experiments"
-                                )
-                            },
-                            leadingContent = {
-                                SettingsIcon {
-                                    Icon(
-                                        painter = painterResource(R.drawable.ic_lab_research_24dp),
-                                        contentDescription = null,
-                                    )
-                                }
-                            },
-                            modifier = Modifier
-                                .testTag("settings_view_experiments")
-                                .clickable {
-                                    navController.navigate("settings/experiments")
                                 }
                         )
                     }

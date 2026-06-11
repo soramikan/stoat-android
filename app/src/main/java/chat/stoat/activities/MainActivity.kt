@@ -100,7 +100,6 @@ import chat.stoat.screens.chat.ChatRouterScreen
 import chat.stoat.screens.chat.standalone.CatchUpScreen
 import chat.stoat.screens.chat.views.channel.ChannelScreen
 import chat.stoat.screens.create.CreateGroupScreen
-import chat.stoat.screens.labs.LabsRootScreen
 import chat.stoat.screens.login.LoginGreetingScreen
 import chat.stoat.screens.login.LoginScreen
 import chat.stoat.screens.login.MfaScreen
@@ -115,7 +114,6 @@ import chat.stoat.screens.settings.AccountSettingsScreen
 import chat.stoat.screens.settings.AppearanceSettingsScreen
 import chat.stoat.screens.settings.ChatSettingsScreen
 import chat.stoat.screens.settings.DebugSettingsScreen
-import chat.stoat.screens.settings.ExperimentsSettingsScreen
 import chat.stoat.screens.settings.LanguagePickerSettingsScreen
 import chat.stoat.screens.settings.MfaSettingsScreen
 import chat.stoat.screens.settings.NotificationsSettingsScreen
@@ -716,7 +714,6 @@ fun AppEntrypoint(
                     composable("settings/chat") { ChatSettingsScreen(navController) }
                     composable("settings/notifications") { NotificationsSettingsScreen(navController) }
                     composable("settings/debug") { DebugSettingsScreen(navController) }
-                    composable("settings/experiments") { ExperimentsSettingsScreen(navController) }
                     composable("settings/language") { LanguagePickerSettingsScreen(navController) }
 
                     composable("settings/channel/{channelId}") { backStackEntry ->
@@ -739,8 +736,6 @@ fun AppEntrypoint(
 
                     composable("about") { AboutScreen(navController) }
                     composable("about/oss") { AttributionScreen(navController) }
-
-                    composable("labs") { LabsRootScreen(navController) }
 
                     composable("changelog/{id}") { ReadChangelogScreen(navController) }
                 }
