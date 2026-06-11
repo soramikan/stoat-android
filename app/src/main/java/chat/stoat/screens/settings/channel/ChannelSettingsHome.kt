@@ -147,7 +147,7 @@ fun ChannelSettingsHome(navController: NavController, channelId: String) {
                         )
                     }
 
-                    if (permissions.hasPermission(PermissionBit.ManageRole)) {
+                    if (permissions.hasPermission(PermissionBit.ManagePermissions)) {
                         ListItem(
                             headlineContent = {
                                 Text(
@@ -166,6 +166,29 @@ fun ChannelSettingsHome(navController: NavController, channelId: String) {
                                 .testTag("channel_settings_view_permissions")
                                 .clickable {
                                     navController.navigate("settings/channel/${channel.id}/permissions")
+                                }
+                        )
+                    }
+
+                    if (permissions.hasPermission(PermissionBit.ManageWebhooks)) {
+                        ListItem(
+                            headlineContent = {
+                                Text(
+                                    text = stringResource(id = R.string.channel_settings_webhooks)
+                                )
+                            },
+                            leadingContent = {
+                                SettingsIcon {
+                                    Icon(
+                                        painter = painterResource(id = R.drawable.ic_cloud_24dp),
+                                        contentDescription = null,
+                                    )
+                                }
+                            },
+                            modifier = Modifier
+                                .testTag("channel_settings_view_webhooks")
+                                .clickable {
+                                    navController.navigate("settings/channel/${channel.id}/webhooks")
                                 }
                         )
                     }

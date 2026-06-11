@@ -7,6 +7,7 @@ import chat.stoat.api.StoatJson
 import chat.stoat.api.api
 import chat.stoat.api.internals.ULID
 import chat.stoat.core.model.schemas.Channel
+import chat.stoat.core.model.schemas.ChannelWebhook
 import chat.stoat.core.model.schemas.Message
 import chat.stoat.core.model.schemas.MessagesInChannel
 import chat.stoat.core.model.schemas.PermissionDescription
@@ -95,6 +96,12 @@ data class CreateInviteResponse(
     val server: String,
     val creator: String,
     val channel: String,
+)
+
+@kotlinx.serialization.Serializable
+private data class CreateWebhookBody(
+    val name: String,
+    val avatar: String? = null
 )
 
 @kotlinx.serialization.Serializable
@@ -200,6 +207,46 @@ suspend fun createInvite(channelId: String): CreateInviteResponse {
     if (error.type != "Server") throw Error(error.type)
 
     return StoatJson.decodeFromString(CreateInviteResponse.serializer(), response)
+}
+
+suspend fun fetchWebhooks(channelId: String): List<ChannelWebhook> {
+    val response = StoatHttp.get("/channels/$channelId/webhooks".api()).bodyAsText()
+
+    try {
+        val error = StoatJson.decodeFromString(StoatAPIError.serializer(), response)
+        throw Exception(error.type)
+    } catch (e: SerializationException) {
+        // Not an error
+    }
+
+    return StoatJson.decodeFromString(ListSerializer(ChannelWebhook.serializer()), response)
+}
+
+suspend fun createWebhook(channelId: String, name: String): ChannelWebhook {
+    val response = StoatHttp.post("/channels/$channelId/webhooks".api()) {
+        contentType(ContentType.Application.Json)
+        setBody(CreateWebhookBody(name = name))
+    }.bodyAsText()
+
+    try {
+        val error = StoatJson.decodeFromString(StoatAPIError.serializer(), response)
+        throw Exception(error.type)
+    } catch (e: SerializationException) {
+        // Not an error
+    }
+
+    return StoatJson.decodeFromString(ChannelWebhook.serializer(), response)
+}
+
+suspend fun deleteWebhook(webhookId: String) {
+    val response = StoatHttp.delete("/webhooks/$webhookId".api()).bodyAsText()
+
+    try {
+        val error = StoatJson.decodeFromString(StoatAPIError.serializer(), response)
+        throw Exception(error.type)
+    } catch (e: SerializationException) {
+        // Not an error
+    }
 }
 
 suspend fun setDefaultChannelPermissions(channelId: String, permissions: Long): Channel {

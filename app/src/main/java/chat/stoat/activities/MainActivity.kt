@@ -123,6 +123,7 @@ import chat.stoat.screens.settings.SettingsScreen
 import chat.stoat.screens.settings.channel.ChannelSettingsHome
 import chat.stoat.screens.settings.channel.ChannelSettingsOverview
 import chat.stoat.screens.settings.channel.ChannelSettingsPermissions
+import chat.stoat.screens.settings.channel.ChannelSettingsWebhooks
 import chat.stoat.screens.settings.server.ServerCategoriesSettings
 import chat.stoat.screens.settings.server.ServerEmojisSettings
 import chat.stoat.screens.settings.server.ServerSettingsHome
@@ -735,6 +736,10 @@ fun AppEntrypoint(
                     composable("settings/channel/{channelId}/permissions") { backStackEntry ->
                         val channelId = backStackEntry.arguments?.getString("channelId") ?: ""
                         ChannelSettingsPermissions(navController, channelId)
+                    }
+                    composable("settings/channel/{channelId}/webhooks") { backStackEntry ->
+                        val channelId = backStackEntry.arguments?.getString("channelId") ?: ""
+                        ChannelSettingsWebhooks(navController, channelId)
                     }
                     composable("settings/server/{serverId}") { backStackEntry ->
                         val serverId = backStackEntry.arguments?.getString("serverId") ?: ""
