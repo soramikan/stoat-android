@@ -123,6 +123,7 @@ import chat.stoat.screens.settings.SettingsScreen
 import chat.stoat.screens.settings.channel.ChannelSettingsHome
 import chat.stoat.screens.settings.channel.ChannelSettingsOverview
 import chat.stoat.screens.settings.channel.ChannelSettingsPermissions
+import chat.stoat.screens.settings.server.ServerCategoriesSettings
 import chat.stoat.screens.settings.server.ServerSettingsHome
 import chat.stoat.screens.settings.server.ServerMembersSettings
 import chat.stoat.screens.settings.server.ServerBansSettings
@@ -741,6 +742,10 @@ fun AppEntrypoint(
                     composable("settings/server/{serverId}/overview") { backStackEntry ->
                         val serverId = backStackEntry.arguments?.getString("serverId") ?: ""
                         ServerSettingsOverview(navController, serverId)
+                    }
+                    composable("settings/server/{serverId}/categories") { backStackEntry ->
+                        val serverId = backStackEntry.arguments?.getString("serverId") ?: ""
+                        ServerCategoriesSettings(navController, serverId)
                     }
                     composable("settings/server/{serverId}/members") { backStackEntry ->
                         val serverId = backStackEntry.arguments?.getString("serverId") ?: ""

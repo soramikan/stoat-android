@@ -6,6 +6,7 @@ import chat.stoat.api.StoatHttp
 import chat.stoat.api.StoatJson
 import chat.stoat.api.api
 import chat.stoat.api.routes.channel.CreateInviteResponse
+import chat.stoat.core.model.schemas.Category
 import chat.stoat.core.model.schemas.Member
 import chat.stoat.core.model.schemas.PermissionDescription
 import chat.stoat.core.model.schemas.Role
@@ -308,6 +309,7 @@ suspend fun patchServer(
     description: String? = null,
     icon: String? = null,
     banner: String? = null,
+    categories: List<Category>? = null,
     remove: List<String>? = null,
     pure: Boolean = false
 ) {
@@ -327,6 +329,13 @@ suspend fun patchServer(
 
     if (banner != null) {
         body["banner"] = StoatJson.encodeToJsonElement(String.serializer(), banner)
+    }
+
+    if (categories != null) {
+        body["categories"] = StoatJson.encodeToJsonElement(
+            ListSerializer(Category.serializer()),
+            categories
+        )
     }
 
     if (remove != null) {
