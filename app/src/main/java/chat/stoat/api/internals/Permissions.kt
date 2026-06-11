@@ -33,6 +33,7 @@ enum class PermissionBit(val value: Long) {
     UploadFiles(1L shl 27),
     Masquerade(1L shl 28),
     React(1L shl 29),
+    BypassSlowmode(1L shl 39),
 
     // * Voice permissions
     Connect(1L shl 30),
@@ -50,7 +51,7 @@ enum class PermissionBit(val value: Long) {
     MentionRoles(1L shl 38),
 
     // * Misc. permissions
-    // % Bits 38 to 52: free area
+    // % Bits 40 to 52: free area
     // % Bits 53 to 64: do not use
 
     // * Grant all permissions

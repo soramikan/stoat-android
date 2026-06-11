@@ -216,6 +216,29 @@ fun ServerSettingsHome(navController: NavController, serverId: String) {
                         )
                     }
 
+                    if (permissions.hasPermission(PermissionBit.ManageRole)) {
+                        ListItem(
+                            headlineContent = {
+                                Text(
+                                    text = stringResource(id = R.string.server_settings_roles)
+                                )
+                            },
+                            leadingContent = {
+                                SettingsIcon {
+                                    Icon(
+                                        painter = painterResource(R.drawable.ic_badge_24dp),
+                                        contentDescription = null,
+                                    )
+                                }
+                            },
+                            modifier = Modifier
+                                .testTag("server_settings_view_roles")
+                                .clickable {
+                                    navController.navigate("settings/server/$serverId/roles")
+                                }
+                        )
+                    }
+
                     if (server.owner == StoatAPI.selfId) {
                         ListItem(
                             headlineContent = {

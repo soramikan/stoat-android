@@ -7,6 +7,8 @@ import chat.stoat.api.StoatJson
 import chat.stoat.api.api
 import chat.stoat.api.routes.channel.CreateInviteResponse
 import chat.stoat.core.model.schemas.Member
+import chat.stoat.core.model.schemas.PermissionDescription
+import chat.stoat.core.model.schemas.Role
 import chat.stoat.core.model.schemas.Server
 import chat.stoat.core.model.schemas.ServerUserChoice
 import chat.stoat.core.model.schemas.ServerWithChannelObjects
@@ -46,6 +48,36 @@ data class Ban(
 data class BansResponse(
     val users: List<User>,
     val bans: List<Ban>
+)
+
+@Serializable
+data class RoleWithId(
+    val id: String,
+    val role: Role
+)
+
+@Serializable
+data class RoleEditBody(
+    val name: String? = null,
+    val colour: String? = null,
+    val hoist: Boolean? = null,
+    val rank: Double? = null,
+    val remove: List<String>? = null
+)
+
+@Serializable
+private data class CreateRoleBody(
+    val name: String
+)
+
+@Serializable
+private data class ServerPermissionsBody(
+    val permissions: Long
+)
+
+@Serializable
+private data class RolePermissionsBody(
+    val permissions: PermissionDescription
 )
 
 suspend fun ackServer(serverId: String) {
@@ -154,6 +186,114 @@ suspend fun fetchInvites(serverId: String): List<CreateInviteResponse> {
 
 suspend fun deleteInvite(code: String) {
     StoatHttp.delete("/invites/$code".api())
+}
+
+suspend fun createRole(serverId: String, name: String): RoleWithId {
+    val response = StoatHttp.post("/servers/$serverId/roles".api()) {
+        setBody(CreateRoleBody(name))
+    }.bodyAsText()
+
+    try {
+        val error = StoatJson.decodeFromString(StoatAPIError.serializer(), response)
+        throw Exception(error.type)
+    } catch (e: SerializationException) {
+        // Not an error
+    }
+
+    val roleWithId = StoatJson.decodeFromString(RoleWithId.serializer(), response)
+    val server = StoatAPI.serverCache[serverId]
+    if (server != null) {
+        StoatAPI.serverCache[serverId] = server.copy(
+            roles = server.roles?.plus(roleWithId.id to roleWithId.role)
+                ?: mapOf(roleWithId.id to roleWithId.role)
+        )
+    }
+
+    return roleWithId
+}
+
+suspend fun editRole(
+    serverId: String,
+    roleId: String,
+    body: RoleEditBody
+): Role {
+    val response = StoatHttp.patch("/servers/$serverId/roles/$roleId".api()) {
+        setBody(body)
+    }.bodyAsText()
+
+    try {
+        val error = StoatJson.decodeFromString(StoatAPIError.serializer(), response)
+        throw Exception(error.type)
+    } catch (e: SerializationException) {
+        // Not an error
+    }
+
+    val role = StoatJson.decodeFromString(Role.serializer(), response)
+    val server = StoatAPI.serverCache[serverId]
+    if (server != null) {
+        StoatAPI.serverCache[serverId] = server.copy(
+            roles = server.roles?.plus(roleId to role) ?: mapOf(roleId to role)
+        )
+    }
+
+    return role
+}
+
+suspend fun setRolePermissions(
+    serverId: String,
+    roleId: String,
+    permissions: PermissionDescription
+): Server {
+    val response = StoatHttp.put("/servers/$serverId/permissions/$roleId".api()) {
+        setBody(RolePermissionsBody(permissions))
+    }.bodyAsText()
+
+    try {
+        val error = StoatJson.decodeFromString(StoatAPIError.serializer(), response)
+        throw Exception(error.type)
+    } catch (e: SerializationException) {
+        // Not an error
+    }
+
+    val server = StoatJson.decodeFromString(Server.serializer(), response)
+    StoatAPI.serverCache[serverId] = server
+    return server
+}
+
+suspend fun setDefaultRolePermissions(serverId: String, permissions: Long): Server {
+    val response = StoatHttp.put("/servers/$serverId/permissions/default".api()) {
+        setBody(ServerPermissionsBody(permissions))
+    }.bodyAsText()
+
+    try {
+        val error = StoatJson.decodeFromString(StoatAPIError.serializer(), response)
+        throw Exception(error.type)
+    } catch (e: SerializationException) {
+        // Not an error
+    }
+
+    val server = StoatJson.decodeFromString(Server.serializer(), response)
+    StoatAPI.serverCache[serverId] = server
+    return server
+}
+
+suspend fun deleteRole(serverId: String, roleId: String) {
+    val response = StoatHttp.delete("/servers/$serverId/roles/$roleId".api())
+        .bodyAsText()
+
+    try {
+        val error = StoatJson.decodeFromString(StoatAPIError.serializer(), response)
+        throw Exception(error.type)
+    } catch (e: SerializationException) {
+        // Not an error
+    }
+
+    val server = StoatAPI.serverCache[serverId]
+    if (server != null) {
+        val roles = server.roles?.toMutableMap() ?: mutableMapOf()
+        roles.remove(roleId)
+        StoatAPI.serverCache[serverId] = server.copy(roles = roles)
+    }
 }
 
 suspend fun leaveOrDeleteServer(serverId: String, leaveSilently: Boolean = false) {
