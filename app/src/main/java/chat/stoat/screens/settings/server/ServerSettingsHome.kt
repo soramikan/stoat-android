@@ -170,6 +170,29 @@ fun ServerSettingsHome(navController: NavController, serverId: String) {
                             }
                     )
 
+                    if (permissions.hasPermission(PermissionBit.ManageServer)) {
+                        ListItem(
+                            headlineContent = {
+                                Text(
+                                    text = stringResource(id = R.string.server_settings_invites)
+                                )
+                            },
+                            leadingContent = {
+                                SettingsIcon {
+                                    Icon(
+                                        painter = painterResource(R.drawable.ic_ios_share_24dp),
+                                        contentDescription = null,
+                                    )
+                                }
+                            },
+                            modifier = Modifier
+                                .testTag("server_settings_view_invites")
+                                .clickable {
+                                    navController.navigate("settings/server/$serverId/invites")
+                                }
+                        )
+                    }
+
                     if (permissions.hasPermission(PermissionBit.BanMembers)) {
                         ListItem(
                             headlineContent = {

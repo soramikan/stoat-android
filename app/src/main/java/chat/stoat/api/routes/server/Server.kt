@@ -5,6 +5,7 @@ import chat.stoat.api.StoatAPIError
 import chat.stoat.api.StoatHttp
 import chat.stoat.api.StoatJson
 import chat.stoat.api.api
+import chat.stoat.api.routes.channel.CreateInviteResponse
 import chat.stoat.core.model.schemas.Member
 import chat.stoat.core.model.schemas.Server
 import chat.stoat.core.model.schemas.ServerUserChoice
@@ -132,6 +133,27 @@ suspend fun fetchBans(serverId: String): BansResponse {
 
 suspend fun unbanUser(serverId: String, userId: String) {
     StoatHttp.delete("/servers/$serverId/bans/$userId".api())
+}
+
+suspend fun fetchInvites(serverId: String): List<CreateInviteResponse> {
+    val response = StoatHttp.get("/servers/$serverId/invites".api())
+        .bodyAsText()
+
+    try {
+        val error = StoatJson.decodeFromString(StoatAPIError.serializer(), response)
+        throw Exception(error.type)
+    } catch (e: SerializationException) {
+        // Not an error
+    }
+
+    return StoatJson.decodeFromString(
+        ListSerializer(CreateInviteResponse.serializer()),
+        response
+    )
+}
+
+suspend fun deleteInvite(code: String) {
+    StoatHttp.delete("/invites/$code".api())
 }
 
 suspend fun leaveOrDeleteServer(serverId: String, leaveSilently: Boolean = false) {
