@@ -948,6 +948,15 @@
     <string name="channel_settings_overview_nsfw_undo_confirm_no">このままにする</string>
     <string name="channel_settings_overview_save">保存</string>
     <string name="channel_settings_permissions">権限</string>
+    <string name="channel_settings_permissions_default">デフォルト</string>
+    <string name="channel_settings_permissions_default_description">ロールごとのチャンネル上書きより前に適用されます。</string>
+    <string name="channel_settings_permissions_roles">ロール上書き%1$d件</string>
+    <string name="channel_settings_permissions_no_overwrite">チャンネル上書きなし</string>
+    <string name="channel_settings_permissions_has_overwrite">カスタムチャンネル上書き</string>
+    <string name="channel_settings_permissions_save">権限を保存</string>
+    <string name="channel_settings_permissions_saving">保存中...</string>
+    <string name="channel_settings_permissions_update_error">チャンネル権限を更新できませんでした。</string>
+    <string name="channel_settings_permissions_unavailable">このチャンネルには設定可能な権限がありません。</string>
     <string name="channel_settings_delete">チャンネルを削除</string>
     <string name="channel_settings_delete_confirm">このチャンネルを削除してもよろしいですか？</string>
     <string name="channel_settings_delete_confirm_description">このチャンネルのすべてのメッセージと設定が永久に消えます（本当に長い間！）</string>

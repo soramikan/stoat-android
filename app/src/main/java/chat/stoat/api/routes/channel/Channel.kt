@@ -9,6 +9,7 @@ import chat.stoat.api.internals.ULID
 import chat.stoat.core.model.schemas.Channel
 import chat.stoat.core.model.schemas.Message
 import chat.stoat.core.model.schemas.MessagesInChannel
+import chat.stoat.core.model.schemas.PermissionDescription
 import chat.stoat.core.model.schemas.User
 import io.ktor.client.request.delete
 import io.ktor.client.request.get
@@ -96,6 +97,29 @@ data class CreateInviteResponse(
     val channel: String,
 )
 
+@kotlinx.serialization.Serializable
+private data class ChannelPermissionsBody(
+    val permissions: Long
+)
+
+@kotlinx.serialization.Serializable
+private data class ChannelPermissionsOverwriteBody(
+    val permissions: PermissionDescription
+)
+
+private fun decodeChannelOrThrow(channelId: String, response: String): Channel {
+    try {
+        val error = StoatJson.decodeFromString(StoatAPIError.serializer(), response)
+        throw Exception(error.type)
+    } catch (e: SerializationException) {
+        // Not an error
+    }
+
+    val channel = StoatJson.decodeFromString(Channel.serializer(), response)
+    StoatAPI.channelCache[channelId] = channel
+    return channel
+}
+
 suspend fun sendMessage(
     channelId: String,
     content: String,
@@ -176,6 +200,37 @@ suspend fun createInvite(channelId: String): CreateInviteResponse {
     if (error.type != "Server") throw Error(error.type)
 
     return StoatJson.decodeFromString(CreateInviteResponse.serializer(), response)
+}
+
+suspend fun setDefaultChannelPermissions(channelId: String, permissions: Long): Channel {
+    val response = StoatHttp.put("/channels/$channelId/permissions/default".api()) {
+        setBody(ChannelPermissionsBody(permissions))
+    }.bodyAsText()
+
+    return decodeChannelOrThrow(channelId, response)
+}
+
+suspend fun setDefaultChannelPermissions(
+    channelId: String,
+    permissions: PermissionDescription
+): Channel {
+    val response = StoatHttp.put("/channels/$channelId/permissions/default".api()) {
+        setBody(ChannelPermissionsOverwriteBody(permissions))
+    }.bodyAsText()
+
+    return decodeChannelOrThrow(channelId, response)
+}
+
+suspend fun setRoleChannelPermissions(
+    channelId: String,
+    roleId: String,
+    permissions: PermissionDescription
+): Channel {
+    val response = StoatHttp.put("/channels/$channelId/permissions/$roleId".api()) {
+        setBody(ChannelPermissionsOverwriteBody(permissions))
+    }.bodyAsText()
+
+    return decodeChannelOrThrow(channelId, response)
 }
 
 suspend fun fetchSingleMessage(channelId: String, messageId: String): Message {

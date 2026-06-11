@@ -984,6 +984,15 @@
     <string name="channel_settings_overview_nsfw_undo_confirm_no">Keep as is</string>
     <string name="channel_settings_overview_save">Save</string>
     <string name="channel_settings_permissions">Permissions</string>
+    <string name="channel_settings_permissions_default">Default</string>
+    <string name="channel_settings_permissions_default_description">Applies before role-specific channel overrides.</string>
+    <string name="channel_settings_permissions_roles">%1$d role overrides</string>
+    <string name="channel_settings_permissions_no_overwrite">No channel override</string>
+    <string name="channel_settings_permissions_has_overwrite">Custom channel override</string>
+    <string name="channel_settings_permissions_save">Save permissions</string>
+    <string name="channel_settings_permissions_saving">Saving...</string>
+    <string name="channel_settings_permissions_update_error">Couldn\'t update channel permissions.</string>
+    <string name="channel_settings_permissions_unavailable">This channel has no configurable permissions.</string>
     <string name="channel_settings_delete">Delete Channel</string>
     <string name="channel_settings_delete_confirm">Are you sure you want to delete this channel?</string>
     <string name="channel_settings_delete_confirm_description">All messages and settings for this channel will be gone forever (a long time!)</string>
