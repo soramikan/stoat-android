@@ -591,8 +591,6 @@
     <string name="channel_settings_overview_description_hint">Denne kanal er udelukkende til samtaler om…</string>
     <string name="channel_settings_overview_nsfw_undo_confirm_description">Brugerne bliver ikke længere bedt om at bekræfte deres alder, før de kan deltage i denne kanal. Sørg for, at indholdet er passende for alle aldre.</string>
     <string name="share_target_select_channel">vælg en kanal at dele til.</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_title">Leder du efter serverindstillinger?</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_body">Vi arbejder stadig på at bringe serveradministration til vores Android-app. Brug venligst webappen til at administrere din server indtil videre.</string>
     <string name="add_server_sheet_step_0_description">En server er der, hvor magien sker. Chat med dine venner, del memes, opbyg fællesskaber og meget mere.</string>
     <string name="add_server_sheet_step_0_join_description">Du har allerede en invitationskode til at deltage i en eksisterende server.</string>
     <string name="add_server_sheet_step_0_create">Opret en ny server</string>

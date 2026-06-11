@@ -597,6 +597,13 @@ fun ChatRouterScreen(
                     serverContextSheetState.hide()
                     showServerContextSheet = false
                 },
+                onOpenServerSettings = {
+                    scope.launch {
+                        serverContextSheetState.hide()
+                        showServerContextSheet = false
+                        topNav.navigate("settings/server/$serverContextSheetTarget")
+                    }
+                },
                 onReportServer = {
                     reportServerTarget = currentServer ?: ""
                     showReportServer = true

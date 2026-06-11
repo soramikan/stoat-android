@@ -6,17 +6,25 @@ import chat.stoat.api.StoatHttp
 import chat.stoat.api.StoatJson
 import chat.stoat.api.api
 import chat.stoat.core.model.schemas.Member
+import chat.stoat.core.model.schemas.Server
 import chat.stoat.core.model.schemas.ServerWithChannelObjects
 import chat.stoat.core.model.schemas.User
 import io.ktor.client.request.delete
 import io.ktor.client.request.get
 import io.ktor.client.request.parameter
+import io.ktor.client.request.patch
 import io.ktor.client.request.post
 import io.ktor.client.request.put
 import io.ktor.client.request.setBody
 import io.ktor.client.statement.bodyAsText
+import io.ktor.http.ContentType
+import io.ktor.http.contentType
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.SerializationException
+import kotlinx.serialization.builtins.ListSerializer
+import kotlinx.serialization.builtins.MapSerializer
+import kotlinx.serialization.builtins.serializer
+import kotlinx.serialization.json.JsonElement
 
 @Serializable
 data class FetchMembersResponse(
@@ -92,6 +100,63 @@ suspend fun fetchMember(serverId: String, userId: String, pure: Boolean = false)
 suspend fun leaveOrDeleteServer(serverId: String, leaveSilently: Boolean = false) {
     StoatHttp.delete("/servers/$serverId".api()) {
         parameter("leave_silently", leaveSilently)
+    }
+}
+
+suspend fun patchServer(
+    serverId: String,
+    name: String? = null,
+    description: String? = null,
+    icon: String? = null,
+    banner: String? = null,
+    remove: List<String>? = null,
+    pure: Boolean = false
+) {
+    val body = mutableMapOf<String, JsonElement>()
+
+    if (name != null) {
+        body["name"] = StoatJson.encodeToJsonElement(String.serializer(), name)
+    }
+
+    if (description != null) {
+        body["description"] = StoatJson.encodeToJsonElement(String.serializer(), description)
+    }
+
+    if (icon != null) {
+        body["icon"] = StoatJson.encodeToJsonElement(String.serializer(), icon)
+    }
+
+    if (banner != null) {
+        body["banner"] = StoatJson.encodeToJsonElement(String.serializer(), banner)
+    }
+
+    if (remove != null) {
+        body["remove"] = StoatJson.encodeToJsonElement(ListSerializer(String.serializer()), remove)
+    }
+
+    val response = StoatHttp.patch("/servers/$serverId".api()) {
+        contentType(ContentType.Application.Json)
+        setBody(
+            StoatJson.encodeToString(
+                MapSerializer(
+                    String.serializer(),
+                    JsonElement.serializer()
+                ),
+                body
+            )
+        )
+    }.bodyAsText()
+
+    try {
+        val error = StoatJson.decodeFromString(StoatAPIError.serializer(), response)
+        throw Exception(error.type)
+    } catch (e: SerializationException) {
+        // Not an error
+    }
+
+    if (!pure) {
+        val server = StoatJson.decodeFromString(Server.serializer(), response)
+        StoatAPI.serverCache[serverId] = server
     }
 }
 

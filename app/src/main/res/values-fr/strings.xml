@@ -592,7 +592,6 @@
     <string name="spark_swipe_to_reply_customise">Customiser la réponse rapide</string>
     <string name="settings_chat_quick_reply_none_description">Vous pouvez répondre depuis n’importe quel menu de message.</string>
     <string name="swipe_to_reply_keep_swiping">Répondre</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_title">À la recherche des paramètres du serveur ?</string>
     <string name="add_server_sheet_step_0_title">Ajouter un serveur</string>
     <string name="add_server_sheet_step_0_description">Un serveur est l’endroit où la magie opère. Discute avec tes amis, partage des memes, construis des communautés, et bien plus.</string>
     <string name="add_server_sheet_step_0_join">Rejoins avec un code d’invitation ou par lien</string>
@@ -609,7 +608,6 @@
     <string name="add_server_sheet_step_1c_name_error_range">Le nom de serveur peut comporter jusqu’à %1$d caractères.</string>
     <string name="add_server_sheet_step_1c_error">Une erreur s’est produite lors de la création du serveur. Veuillez réessayer plus tard.</string>
     <string name="add_server_sheet_step_1c_create">Créer</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_body">Nous travaillons encore à l’ajout de la gestion des serveurs sur notre application Android. Veuillez utiliser l’application web pour gérer votre serveur pour le moment.</string>
     <string name="add_server_sheet_step_0_create_description">Vous souhaitez créer un tout nouveau serveur à partir de zéro.</string>
     <string name="add_server_sheet_step_1c_description">Vous pouvez toujours personnaliser le nom ou l’icône et inviter vos amis plus tard.</string>
     <string name="attachment_spoiler">Filigrane</string>

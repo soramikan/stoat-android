@@ -592,8 +592,6 @@
     <string name="spark_swipe_to_reply_description">Creare dei thread non è mai stato così semplice.\nScorri semplicemente verso sinistra su ogni messaggio.\nRispondi fino a cinque messaggi alla volta.</string>
     <string name="swipe_to_reply_release">Rilascia per rispondere</string>
     <string name="settings_chat_quick_reply_none_description">Puoi rispondere dal menu di qualsiasi messaggio.</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_title">Cerchi le impostazioni del server?</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_body">Stiamo ancora lavorando per portare la gestione dei server sull\'app Android. Per favore, utilizza l\'applicazione web per il momento.</string>
     <string name="add_server_sheet_step_0_title">Aggiungi Server</string>
     <string name="add_server_sheet_step_0_description">Un server, è il posto dove avviene la magia. Chatta con i tuoi amici, divertiti, metti su una community, o altro ancora.</string>
     <string name="add_server_sheet_step_0_create">Crea un nuovo server</string>

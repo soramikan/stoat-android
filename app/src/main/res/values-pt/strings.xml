@@ -587,8 +587,6 @@
     <string name="main_tab_overview">Você</string>
     <string name="swipe_to_reply_keep_swiping">Responder</string>
     <string name="swipe_to_reply_release">Liberar para responder</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_title">Procurando configurações de servidor?</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_body">Ainda estamos trabalhando para trazer o gerenciamento de servidores para o nosso aplicativo Android. Por enquanto, use o aplicativo da Web para gerenciar seu servidor.</string>
     <string name="add_server_sheet_step_0_title">Adicionar Servidor</string>
     <string name="add_server_sheet_step_0_description">Um servidor é onde a mágica acontece. Converse com seus amigos, compartilhe memes, crie comunidades e muito mais.</string>
     <string name="add_server_sheet_step_0_join">Participe por código de convite ou link</string>

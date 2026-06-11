@@ -592,8 +592,6 @@
     <string name="spark_swipe_to_reply_customise">Змяніць хуткі адказ</string>
     <string name="swipe_to_reply_keep_swiping">Адказаць</string>
     <string name="settings_chat_quick_reply_none_description">Вы можаце адказаць з меню якога заўгодна паведамлення.</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_title">Шукаеце налады сервера?</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_body">Мы ўсё яшчэ працуем над дадаваннем кіравання серверам у праграму для Android. Пакуль што, калі ласка, скарыстайцеся вэб-сайтам, каб кіраваць вашым серверам.</string>
     <string name="add_server_sheet_step_0_title">Дадаць сервер</string>
     <string name="add_server_sheet_step_0_join">Далучыцца з кодам ці спасылкаю</string>
     <string name="add_server_sheet_step_0_join_description">У вас ужо ёсць код запрашэння на існуючы сервер.</string>

@@ -1,8 +1,6 @@
 package chat.stoat.sheets
 
-import android.content.Intent
 import android.widget.Toast
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -19,12 +17,9 @@ import androidx.compose.material3.Checkbox
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
-import androidx.compose.material3.LocalContentColor
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -32,22 +27,21 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
 import androidx.compose.ui.platform.LocalClipboardManager
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.unit.dp
-import androidx.core.net.toUri
 import chat.stoat.R
 import chat.stoat.api.StoatAPI
+import chat.stoat.api.internals.PermissionBit
+import chat.stoat.api.internals.hasPermission
 import chat.stoat.api.routes.server.leaveOrDeleteServer
 import chat.stoat.composables.generic.SheetButton
 import chat.stoat.composables.markdown.prose.ChatMarkdown
 import chat.stoat.composables.screens.settings.ServerOverview
-import chat.stoat.composables.sheets.SheetSelection
-import chat.stoat.core.model.data.STOAT_WEB_APP
+import chat.stoat.internals.extensions.rememberServerPermissions
 import chat.stoat.internals.Platform
 import kotlinx.coroutines.launch
 
@@ -55,9 +49,11 @@ import kotlinx.coroutines.launch
 fun ServerContextSheet(
     serverId: String,
     onReportServer: () -> Unit,
+    onOpenServerSettings: () -> Unit,
     onHideSheet: suspend () -> Unit
 ) {
     val server = StoatAPI.serverCache[serverId]
+    val permissions by rememberServerPermissions(serverId)
 
     if (server == null) {
         Box(
@@ -169,39 +165,30 @@ fun ServerContextSheet(
                 )
             }
 
-            if (server.owner == StoatAPI.selfId) {
-                Box(
-                    modifier = Modifier
-                        .clip(MaterialTheme.shapes.medium)
-                        .background(MaterialTheme.colorScheme.primary)
-                ) {
-                    CompositionLocalProvider(LocalContentColor provides MaterialTheme.colorScheme.onPrimary) {
-                        SheetSelection(
-                            icon = {},
-                            title = {
-                                Text(
-                                    text = stringResource(id = R.string.server_context_sheet_moderators_early_disclaimer_title)
-                                )
-                            },
-                            description = {
-                                Text(
-                                    text = stringResource(id = R.string.server_context_sheet_moderators_early_disclaimer_body)
-                                )
-                            },
-                            arrowTint = LocalContentColor.current.copy(alpha = 0.5f),
-                        ) {
-                            context.startActivity(
-                                Intent(
-                                    Intent.ACTION_VIEW,
-                                    "$STOAT_WEB_APP/server/${server.id}/settings".toUri()
-                                )
-                            )
-                        }
-                    }
-                }
-            }
-
             HorizontalDivider()
+        }
+
+        if (permissions.hasPermission(PermissionBit.ManageServer)) {
+            SheetButton(
+                leadingContent = {
+                    Icon(
+                        painter = painterResource(id = R.drawable.ic_settings_24dp),
+                        contentDescription = null
+                    )
+                },
+                headlineContent = {
+                    Text(
+                        text = stringResource(id = R.string.server_context_sheet_actions_settings)
+                    )
+                },
+                supportingContent = {
+                    Text(
+                        text = stringResource(id = R.string.server_context_sheet_actions_settings_description)
+                    )
+                },
+                special = true,
+                onClick = onOpenServerSettings
+            )
         }
 
         SheetButton(

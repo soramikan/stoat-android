@@ -591,8 +591,6 @@
     <string name="main_tab_communities">Comunitats</string>
     <string name="main_tab_conversations">Converses</string>
     <string name="main_tab_overview">Tu</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_title">Estàs buscant per configurar el servidor?</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_body">Encara estem treballant per incorporar la gestió de servidors a l\'aplicació per a l\'Android. Si us plau, per ara, feu servir la versió web per gestionar el teu servidor.</string>
     <string name="add_server_sheet_step_0_title">Afegeix un servidor</string>
     <string name="add_server_sheet_step_0_description">Un servidor és on passa la màgia. Xateja amb els teus amics, comparteix mems, crea comunitats i molt més.</string>
     <string name="add_server_sheet_step_0_join">Uneix-te amb el codi o l\'enllaç d\'invitació</string>

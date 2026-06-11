@@ -565,8 +565,6 @@
     <string name="swipe_to_reply_release">برای پاسخ دادن آزاد کنید</string>
     <string name="programming_language_snippet">[%1$s قطعه]</string>
     <string name="programming_language_snippet_default">[قطعه کد]</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_title">به دنبال تنظیمات سرور هستید؟</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_body">ما همچنان در حال کار بر روی آوردن مدیریت سرور به برنامه اندروید خود هستیم. لطفاً در حال حاضر از برنامه وب برای مدیریت سرور خود استفاده کنید.</string>
     <string name="add_server_sheet_step_0_title">افزودن سرور</string>
     <string name="add_server_sheet_step_0_description">سرور جایی است که جادو اتفاق می افتد. با دوستان خود چت کنید، میم ها را به اشتراک بگذارید، انجمن بسازید و موارد دیگر.</string>
     <string name="add_server_sheet_step_0_join">با کد دعوت یا لینک عضو شوید</string>

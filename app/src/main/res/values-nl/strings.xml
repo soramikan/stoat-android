@@ -287,9 +287,7 @@
     <string name="user_info_sheet_category_bio">Bio</string>
     <string name="channel_settings">Kanaalinstellingen</string>
     <string name="channel_settings_overview_update_info_error_fallback">Er is een fout opgetreden bij het bijwerken van het kanaal.</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_title">Op zoek naar serverinstellingen?</string>
     <string name="user_info_sheet_open">Open gebruikersinfo</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_body">We werken nog steeds aan de integratie van serverbeheer in onze Android-app. Gebruik voorlopig de webapp om je server te beheren.</string>
     <string name="user_info_sheet_webhook">Je hebt een Webhook gevonden!</string>
     <string name="user_info_sheet_webhook_body">Webhooks zijn geautomatiseerde uitzendingen van andere diensten op het internet. Ze kunnen niet terugchatten, maar je kunt wel zien wat ze te zeggen hebben.</string>
     <string name="user_info_sheet_webhook_learn_more">Meer informatie</string>

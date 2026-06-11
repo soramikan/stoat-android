@@ -592,7 +592,6 @@
     <string name="spark_swipe_to_reply_customise">Spersonalizuj Szybką Odpowiedź</string>
     <string name="settings_chat_quick_reply_none_description">Możesz odpowiedzieć z menu wiadomości.</string>
     <string name="spark_swipe_to_reply_description">Tworzenie wątków nigdy nie było łatwiejsze.\nPo prostu przesuń palcem na jakąkolwiek wiadomość w lewo\nOdpowiedz do nawet pięciu wiadomości na raz.</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_title">Szukasz ustawień serwera?</string>
     <string name="add_server_sheet_step_0_title">Dodaj Serwer</string>
     <string name="add_server_sheet_step_0_description">Serwer to miejsce, gdzie dzieje się magia. Rozmawiaj ze swoimi znajomymi, udostępniaj memy, twórz społeczności i wiele więcej.</string>
     <string name="add_server_sheet_step_0_join">Dołącz przez kod zaproszenia lub link</string>
@@ -610,7 +609,6 @@
     <string name="add_server_sheet_step_1c_name_error_range">Nazwa serwera może mieć do %1$d znaków.</string>
     <string name="add_server_sheet_step_1c_error">Wystąpił błąd podczas tworzenia serwera. Proszę spróbować ponownie później.</string>
     <string name="add_server_sheet_step_1c_create">Stwórz</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_body">Nadal pracujemy nad dodaniem zarządzania serwerem do naszej aplikacji na Androida. Na razie prosimy o użycie aplikacji internetowej, aby zarządzać serwerem.</string>
     <string name="add_server_sheet_step_1c_description">Zawsze możesz dostosować nazwę lub ikonę, a potem zaprosić znajomych.</string>
     <string name="attachment_spoiler">Spoiler</string>
     <string name="attachment_preview_spoiler_description">Ten załącznik zostanie ujawniony dopiero po tapnięciu.</string>

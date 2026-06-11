@@ -603,9 +603,7 @@
     <string name="add_server_sheet_step_1c_name_placeholder">Sunucum</string>
     <string name="add_server_sheet_step_1c_name_error_range">Sunucu ismi en fazla %1$d karakter uzunluğunda olabilir.</string>
     <string name="add_server_sheet_step_1c_error">Sunucunu oluştururken bir hata oldu. Lütfen daha sonra tekrar dene.</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_body">Sunucu yönetimini Android uygulamamıza getirmek için hala çalışıyoruz. Sunucunu yönetmek için şimdilik lütfen web uygulamasını kullan.</string>
     <string name="add_server_sheet_step_0_description">Sunucu sihrin gerçekleştiği bir yerdir. Arkadaşlarınla konuş, memleri paylaş, toplulukları kur, ve daha fazlasını yapın.</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_title">Sunucu ayarlarını mı arıyorsun?</string>
     <string name="add_server_sheet_step_0_title">Sunucu ekle</string>
     <string name="add_server_sheet_step_1c_description">Her zaman adı ve ya simgeyi özelleştirebilir ve daha sonra arkadaşlarınızı davet edebilirsiniz.</string>
     <string name="spark_swipe_to_reply_cta">Anlaşıldı</string>

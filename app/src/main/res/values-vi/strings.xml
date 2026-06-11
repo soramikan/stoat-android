@@ -311,8 +311,6 @@
     <string name="server_context_sheet_actions_leave_confirm_no">Ở lại</string>
     <string name="server_context_sheet_actions_leave_silently">Rời âm thầm</string>
     <string name="server_context_sheet_actions_report">Báo cáo</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_title">Đang tìm cài đặt máy chủ hả?</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_body">Chúng tôi vẫn đang làm việc để đưa việc quản lý máy chủ lên ứng dụng Android. Cho đến hiện tại, hãy dùng phiên bản web để thực hiện thao tác này.</string>
     <string name="user_info_sheet_open">Mở thông tin người dùng</string>
     <string name="user_info_sheet_user_not_found">Không thể tìm thấy người dùng</string>
     <string name="user_info_sheet_webhook">Bạn đã tìm được webhook!</string>

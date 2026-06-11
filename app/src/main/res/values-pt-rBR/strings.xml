@@ -591,7 +591,6 @@
     <string name="spark_swipe_to_reply_description">Criar tópicos de mensagens nunca foi tão fácil.\nApenas deslize para a esquerda em qualquer mensagem.\nResponda a até 5 mensagens de uma vez.</string>
     <string name="spark_swipe_to_reply_cta">Entendi</string>
     <string name="spark_swipe_to_reply_customise">Customizar Resposta Rápida</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_title">Procurando por configurações de servidor?</string>
     <string name="add_server_sheet_step_0_description">Um servidor é onde a mágica acontece. Converse com seus amigos, compartilhe memes, construa comunidades e muito mais.</string>
     <string name="add_server_sheet_step_1j_title">Entrar com um convite</string>
     <string name="add_server_sheet_step_1j_description">Caso tenha um código ou link de convite, você pode entrar em um servidor agora mesmo.</string>
@@ -604,7 +603,6 @@
     <string name="add_server_sheet_step_1j_label">Código ou link de convite</string>
     <string name="attachment_spoiler">Spoiler</string>
     <string name="attachment_preview_spoiler">Marcar como spoiler</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_body">Ainda estamos trabalhando para trazer as configurações de servidor para o nosso aplicativo Android. Por enquanto, gerencie seu servidor através do aplicativo de navegador.</string>
     <string name="add_server_sheet_step_0_title">Adicionar um servidor</string>
     <string name="add_server_sheet_step_0_join">Entrar com um código de convite ou link</string>
     <string name="attachment_preview_spoiler_description">Este anexo só será exibido ao ser tocado.</string>

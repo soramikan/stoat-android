@@ -602,8 +602,6 @@
     <string name="spark_swipe_to_reply">Проведіть пальцем, щоб відповісти тут.</string>
     <string name="spark_swipe_to_reply_cta">Зрозумів</string>
     <string name="spark_swipe_to_reply_customise">Налаштувати швидку відповідь</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_title">Шукаєте налаштування сервера?</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_body">Ми все ще працюємо над тим, щоб перенести керування сервером у наш додаток для Android. Наразі, будь ласка, використовуйте веб-додаток для керування вашим сервером.</string>
     <string name="add_server_sheet_step_0_title">Додати сервер</string>
     <string name="add_server_sheet_step_1j_description">Якщо у вас є код запрошення або посилання, ви можете приєднатися до сервера прямо зараз.</string>
     <string name="add_server_sheet_step_0_description">Сервер - це місце, де відбувається магія. Спілкуйтеся з друзями, діліться мемами, створюйте спільноти та багато іншого.</string>

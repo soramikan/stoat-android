@@ -487,10 +487,8 @@
     <string name="friends_scan_qr">Scanează cod QR</string>
     <string name="friends_add_by_tag_sheet_invalid_clipboard">Clipboard-ul nu conține un nume de utilizator și etichetă validă.</string>
     <string name="friends_scan_qr_result_sheet_invalid_description">Acesta nu este un cod QR Revolt valid.</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_title">Cauți setările de server?</string>
     <string name="friends_add_by_tag_sheet_description">Poți adăuga un prieten folosind %1$snumele de utilizator%3$s și %2$seticheta%3$s. De exemplu, dacă numele de utilizator este %1$sjane%3$s, iar eticheta este %2$s1234%3$s, poți adăuga cu %1$sjane%3$s#%2$s1234%3$s.</string>
     <string name="swipe_to_reply_release">Eliberează pentru răspuns</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_body">Încă lucrăm la integrarea funcției de gestionare a serverului în aplicația Android. Momentan, folosește aplicația web pentru a-ți gestiona serverul.</string>
     <string name="add_server_sheet_step_0_title">Adaugă un server</string>
     <string name="friends_add_by_tag_sheet_tag">Etichetă</string>
     <string name="add_server_sheet_step_1c_title">Creează un server</string>

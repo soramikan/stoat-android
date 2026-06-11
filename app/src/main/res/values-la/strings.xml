@@ -285,7 +285,6 @@
     <string name="server_context_sheet_actions_leave_confirm_no">Manere</string>
     <string name="server_context_sheet_actions_leave_silently">Silentio discede</string>
     <string name="server_context_sheet_actions_report">Referre</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_title">Quaerisne occasus servi?</string>
     <string name="user_info_sheet_open">Aperi informationem usoris</string>
     <string name="user_info_sheet_user_not_found">Hunc usorem resolvere non possum</string>
     <string name="user_info_sheet_user_not_found_description">Hic usor fortasse deletus est aut tibi non licet eum spectare.</string>
@@ -297,7 +296,6 @@
     <string name="copied">Ad tabellam delapsum est</string>
     <string name="channel_link_invalid_description">Hic sermo deletus esse potest aut fortasse non habes permissionem ad videndum.</string>
     <string name="server_context_sheet_actions_leave_confirm_eyebrow">Donec invitatus iterum fueris, non poteris rejoinere.</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_body">Adhuc laboramus ut administrationem servi ad applicationem nostram Android perferamus. Quaeso, nunc interretialem applicationem adhibeto ad servum administrandum.</string>
     <string name="programming_language_snippet">[%1$s fragmentum]</string>
     <string name="message_context_sheet_actions_copy_failed_empty">Nuntius vacuus est, nihil ad copiam</string>
     <string name="user_info_sheet_edit_profile">Redigere Profilum</string>

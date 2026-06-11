@@ -585,8 +585,6 @@
     <string name="swipe_to_reply_keep_swiping">Antworten</string>
     <string name="swipe_to_reply_release">Loslassen, um zu antworten</string>
     <string name="settings_chat_quick_reply_none_description">Du kannst vom Nachrichtenmenü aus antworten.</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_title">Auf der Suche nach Servereinstellungen?</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_body">Wir arbeiten noch daran, die Serververwaltung in unsere Android-App zu integrieren. Nutze bitte vorerst die Web-App zur Verwaltung deines Servers.</string>
     <string name="add_server_sheet_step_0_title">Server hinzufügen</string>
     <string name="add_server_sheet_step_0_description">Auf den Servern spielt die Musik. Chatte mit deinen Freund:innen, versende Memes, baue Communities auf und vieles mehr.</string>
     <string name="add_server_sheet_step_0_join">Trete über einen Einladungscode oder Link bei</string>

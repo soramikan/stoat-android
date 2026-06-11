@@ -453,8 +453,6 @@
     <string name="user_card_data_point_qrcode">%1$d.Código QR</string>
     <string name="user_card_data_point_photo">%1$d.Foto</string>
     <string name="programming_language_snippet_default">[Fragmento de código]</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_title">¿Buscando los ajustes del servidor?</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_body">Todavía estamos trabajando para incorporar la gestión del servidor en nuestra app para Android. Por ahora, puedes usar la app web para gestionar tu servidor.</string>
     <string name="add_server_sheet_step_0_title">Añadir servidor</string>
     <string name="add_server_sheet_step_0_description">Un servidor es donde ocurre la magia. Chatea con tus amigos, comparte memes, crea comunidades y mucho más.</string>
     <string name="add_server_sheet_step_0_join">Únete con un código o link de invitación</string>

@@ -590,8 +590,6 @@
     <string name="swipe_to_reply_keep_swiping">Arrespunder</string>
     <string name="add_server_sheet_step_0_title">Adecionar serbidor</string>
     <string name="swipe_to_reply_release">Suolta pa arrespunder</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_title">Apercurando las cunfiguraçones de l serbidor?</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_body">Inda stamos trabalhando pa traier la geston de serbidor a la nuossa app d’Android. Por agora outeliza la nuossa web app, por fabor.</string>
     <string name="add_server_sheet_step_0_description">Un serbidor ye adonde la magie acuntece. Cumbersa culs tous amigos, cumparte memes, custrui quemunidades, i más.</string>
     <string name="add_server_sheet_step_1j_description">Se tenes un código ou link d’ambitaçon, puodes ajuntar-te a un serbidor agora mesmo.</string>
     <string name="add_server_sheet_step_1c_name_error_range">L nome de l serbidor puoede tener anté %1$d carateres.</string>

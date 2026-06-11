@@ -497,8 +497,6 @@
     <string name="spark_swipe_to_reply">اسحب لترد هنا</string>
     <string name="spark_swipe_to_reply_customise">خصص الرد السريع</string>
     <string name="user_badge_early_adopter">مستخدم مبكر</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_title">هل تبحث عن إعدادات السيرفر؟</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_body">نحن لا نزال نعمل على إحضار إدارة السيرفرات إلى تطبيق الأندرويد. من فضلك استخدم الموقع لإدارة سيرفرك حاليا.</string>
     <string name="add_server_sheet_step_0_title">أضف سيرفر</string>
     <string name="user_info_sheet_webhook_body">الويب هوك عبارة عن عملية بث اوتوماتيكي من خدمات أخرى على الإنترنت. لا يمكنهم الرد، لكن يمكنك رؤية ما يقولون.</string>
     <string name="add_server_sheet_step_1j_description">إذا كان لديك رمز دعوة أو رابط، يمكنك الانضمام إلى سيرفر الآن.</string>

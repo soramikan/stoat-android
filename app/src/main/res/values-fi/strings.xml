@@ -357,8 +357,6 @@
     <string name="channel_context_sheet_open">Avaa kanavan toiminnot</string>
     <string name="user_info_sheet_add_friend">Lisää kaveri</string>
     <string name="status_offline">Offline</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_title">Etsitkö palvelimen asetuksia?</string>
-    <string name="server_context_sheet_moderators_early_disclaimer_body">Työskentelemme edelleenn palvelimen hallinnan tuomisen parissa Android-sovellukseemee. Käytä toistaiseksi palvelimesi hallintaan verkkosovellutsta.</string>
     <string name="user_info_sheet_webhook_learn_more">Lisätietoja</string>
     <string name="user_info_sheet_category_bio">Esittely</string>
     <string name="user_info_sheet_bio_empty">Tämä käyttäjä ei ole veilä asettanut esittelyä.</string>
