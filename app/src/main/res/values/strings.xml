@@ -649,6 +649,9 @@
     <string name="voice_screen_sharing">Sharing their screen</string>
     <string name="voice_camera_on">Camera on</string>
 
+    <string name="voice_action_microphone">Toggle microphone</string>
+    <string name="voice_action_camera">Toggle camera</string>
+    <string name="voice_action_screen_share">Toggle screen sharing</string>
     <string name="voice_action_disconnect">Disconnect</string>
 
     <string name="voice_status_connecting">Connecting…</string>

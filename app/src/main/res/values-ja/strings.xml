@@ -615,6 +615,9 @@
     <string name="voice_screen_sharing">画面を共有中</string>
     <string name="voice_camera_on">カメラオン</string>
 
+    <string name="voice_action_microphone">マイクを切り替え</string>
+    <string name="voice_action_camera">カメラを切り替え</string>
+    <string name="voice_action_screen_share">画面共有を切り替え</string>
     <string name="voice_action_disconnect">切断</string>
 
     <string name="voice_status_connecting">接続中…</string>

@@ -334,7 +334,7 @@ fun VoiceSheet(
                         painter = if (isMicOn) painterResource(R.drawable.ic_mic_24dp) else painterResource(
                             R.drawable.ic_mic_off_24dp
                         ),
-                        contentDescription = "TODO change this string to res"
+                        contentDescription = stringResource(R.string.voice_action_microphone)
                     )
                 }
                 Spacer(Modifier.width(4.dp))
@@ -358,7 +358,7 @@ fun VoiceSheet(
                         painter = if (isCameraOn) painterResource(R.drawable.ic_videocam_24dp) else painterResource(
                             R.drawable.ic_videocam_off_24dp
                         ),
-                        contentDescription = "TODO change this string to res"
+                        contentDescription = stringResource(R.string.voice_action_camera)
                     )
                 }
                 Spacer(Modifier.width(4.dp))
@@ -380,7 +380,7 @@ fun VoiceSheet(
                 ) {
                     Icon(
                         painter = painterResource(R.drawable.ic_mobile_share_24px),
-                        contentDescription = "TODO change this string to res"
+                        contentDescription = stringResource(R.string.voice_action_screen_share)
                     )
                 }
                 Spacer(Modifier.width(4.dp))
