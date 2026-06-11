@@ -453,13 +453,9 @@
     <string name="corner_radius_picker_circular">Sirkulær</string>
     <string name="spark_keyboard_shortcuts">Bruker du tastatur?</string>
     <string name="spark_notifications_rationale_dismiss">Ikke nå</string>
-    <string name="spark_early_access_description_1">Du er en av de første som prøver vår nye Android-app. Vi er glade for å ha deg her!</string>
     <string name="spark_keyboard_shortcuts_description">Revolt har hurtigtaster! Trykk %1$s for å se dem.</string>
     <string name="spark_keyboard_shortcuts_dismiss">Greit</string>
-    <string name="spark_early_access">Velkommen til forhåndsutgivelsen! 🚀</string>
     <string name="spark_keyboard_shortcuts_cta">Åpne hurtigtaster</string>
-    <string name="spark_early_access_cta">Skjønner</string>
-    <string name="spark_early_access_description_3">Vi er begeistret over å ha deg med på laget. La oss skape noe flott sammen!</string>
     <string name="spark_swipe_to_reply">Sveip for å svare er her.</string>
     <string name="spark_swipe_to_reply_description">Det har aldri vært enklere å lage meldingstråder.\nBare sveip til venstre på en hvilken som helst melding.\nSvar på opptil fem meldinger samtidig.</string>
     <string name="spark_swipe_to_reply_cta">Skjønner</string>

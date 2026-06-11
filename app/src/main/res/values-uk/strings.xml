@@ -487,11 +487,8 @@
     <string name="spark_keyboard_shortcuts">Використовуючи клавіатуру?</string>
     <string name="message_failed_to_send">Не вдалося надіслати, натисніть і утримуйте для опцій</string>
     <string name="colour_picker_saturation">Насиченість</string>
-    <string name="spark_early_access_description_2">Оскільки це ранній доступ, все ще може бути не ідеальним. Час від часу ви можете зіткнутися з помилкою, збоєм або дивною примхою. Ваші відгуки допомагають нам згладити шорсткості та зробити Revolt кращим.</string>
     <string name="settings_chat_interactive_embeds_description">Інтерактивні вставки дозволяють вам взаємодіяти з деякими типами посилань безпосередньо в чаті. Наприклад, ви можете відтворювати відео YouTube або переглядати альбоми з Apple Music.</string>
     <string name="spark_notifications_rationale_description">Увімкніть сповіщення, щоб отримувати актуальні повідомлення та згадки.</string>
-    <string name="spark_early_access">Ласкаво просимо до Раннього Доступу! 🚀</string>
-    <string name="spark_early_access_description_1">Ви один із перших, хто спробував наш новий додаток для Android. Ми раді бачити вас тут!</string>
     <string name="settings_appearance_avatar_shape_description">Виберіть ступінь округлення для зображень профілю, зокрема в чаті та профілях. Це стосується всіх користувачів.</string>
     <string name="settings_chat_interactive_embeds">Інтерактивні вставки</string>
     <string name="settings_chat_hint_poorly_formed_settings_keys_description">Деякі ваші налаштування Revolt пошкоджені. Це може бути пов’язано з використанням сторонніх клієнтів. Уражені налаштування:</string>
@@ -567,8 +564,6 @@
     <string name="spark_notifications_rationale_dismiss">Не зараз</string>
     <string name="spark_keyboard_shortcuts_cta">Відкрити ярлики</string>
     <string name="spark_keyboard_shortcuts_dismiss">Добре</string>
-    <string name="spark_early_access_description_3">Ми дуже раді, що ви на борту. Давайте зробимо щось чудове разом!</string>
-    <string name="spark_early_access_cta">Зрозумів</string>
     <string name="hint_provide_feedback">Ми любимо відгуки!</string>
     <string name="hint_provide_feedback_description">Якщо у вас є відгук, пропозиції чи звіти про помилки, повідомте нас. Ми завжди прагнемо покращити Revolt.</string>
     <string name="hint_provide_feedback_cta">Оцініть в Google Play</string>

@@ -165,13 +165,6 @@ fun LoginGreetingScreen(navController: NavController) {
                 ) {
                     Column(horizontalAlignment = Alignment.CenterHorizontally) {
                         Text(text = "Try new login experience", textAlign = TextAlign.Center)
-                        Text(
-                            text = "(beta)",
-                            color = LocalContentColor.current.copy(alpha = 0.5f),
-                            fontSize = 12.sp,
-                            fontWeight = FontWeight.Normal,
-                            textAlign = TextAlign.Center
-                        )
                     }
                 }
             }

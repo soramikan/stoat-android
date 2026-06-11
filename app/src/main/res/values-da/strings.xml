@@ -424,8 +424,6 @@
     <string name="spark_keyboard_shortcuts_description">Revolt har tastaturgenveje! Tryk på %1$s for at se dem.</string>
     <string name="spark_keyboard_shortcuts_cta">Åbn genveje</string>
     <string name="spark_keyboard_shortcuts_dismiss">Okay</string>
-    <string name="spark_early_access">Velkommen til Tidlig Adgang! 🚀</string>
-    <string name="spark_early_access_cta">Forstået</string>
     <string name="spark_swipe_to_reply">Swipe for at svare er her.</string>
     <string name="spark_swipe_to_reply_cta">Forstået</string>
     <string name="spark_swipe_to_reply_customise">Tilpas hurtigsvar</string>
@@ -581,15 +579,12 @@
     <string name="channel_settings_overview_update_info_error_fallback">Der opstod en fejl ved opdatering af kanalen.</string>
     <string name="channel_settings_overview_info">Kanalinfo</string>
     <string name="keyboard_shortcut_messaging">Beskeder</string>
-    <string name="spark_early_access_description_3">Vi er begejstrede for at have dig om bord. Lad os skabe noget stort sammen!</string>
     <string name="report_message">Tak, fordi du tog dig tid til at rapportere denne besked. Din rapport deles ikke med brugeren, der sendte beskeden, eller serverens moderatorer.</string>
     <string name="report_reason_content_malware">Malware eller phishing</string>
     <string name="report_reason_user_underage">Ikke minimumsalderen for at bruge platformen</string>
     <string name="report_reason_additional_hint">Yderligere information, der kan hjælpe os i efterforskningen. Valgfrit.</string>
     <string name="corner_radius_picker_choose_radius_yes">Brug</string>
     <string name="spark_notifications_rationale_description">Aktiver notifikationer for at holde dig opdateret om beskeder og omtaler.</string>
-    <string name="spark_early_access_description_1">Du er en af de første til at prøve vores nye Android-app. Vi er glade for at have dig her!</string>
-    <string name="spark_early_access_description_2">Da dette er tidlig adgang, er alt måske ikke helt på plads endnu. Du kan opleve fejl, nedbrud eller særheder. Din feedback hjælper os med at rette op og gøre Revolt endnu bedre.</string>
     <string name="spark_swipe_to_reply_description">Det har aldrig været nemmere at oprette tråde.\nBare swipe til venstre på en besked.\nBesvar op til fem beskeder ad gangen.</string>
     <string name="settings_appearance_colour_overrides">Farveoverstyringer</string>
     <string name="settings_chat_quick_reply_none_description">Du kan svare fra enhver beskeds menu.</string>

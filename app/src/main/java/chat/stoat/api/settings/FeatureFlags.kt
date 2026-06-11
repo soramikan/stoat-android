@@ -47,9 +47,7 @@ object FeatureFlags {
 
     @FeatureFlag("UserCards")
     var userCards by mutableStateOf<UserCardsVariates>(
-        UserCardsVariates.Restricted {
-            StoatAPI.selfId?.endsWith("Z") == true
-        }
+        UserCardsVariates.Enabled
     )
 
     val userCardsGranted: Boolean

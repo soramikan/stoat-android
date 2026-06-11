@@ -632,12 +632,6 @@
     <string name="spark_keyboard_shortcuts_cta">ショートカットを開く</string>
     <string name="spark_keyboard_shortcuts_dismiss">了解</string>
 
-    <string name="spark_early_access">早期アクセスへようこそ！ 🚀</string>
-    <string name="spark_early_access_description_1">新しいAndroidアプリを最初に試すユーザーのひとりです。参加していただきありがとうございます！</string>
-    <string name="spark_early_access_description_2">早期アクセスのため、まだ完璧ではない部分があります。時々バグ、クラッシュ、奇妙な挙動に遭遇するかもしれません。あなたのフィードバックは、粗い部分を整え、Stoatをさらに良くする助けになります。</string>
-    <string name="spark_early_access_description_3">参加していただけて嬉しいです。一緒に良いものを作りましょう！</string>
-    <string name="spark_early_access_cta">了解</string>
-
     <string name="spark_swipe_to_reply">スワイプ返信が利用可能になりました。</string>
     <string name="spark_swipe_to_reply_description">メッセージスレッドの作成がこれまでになく簡単になりました。\n任意のメッセージを左にスワイプするだけです。\n一度に最大5件のメッセージへ返信できます。</string>
     <string name="spark_swipe_to_reply_cta">了解</string>

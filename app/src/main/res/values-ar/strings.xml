@@ -411,8 +411,6 @@
     <string name="server_flag_official">خادم رسمي</string>
     <string name="server_flag_verified">خادم موثق</string>
     <string name="channel_settings_delete_confirm">هل انت متاكد انك تريد حذف هذه القناة؟</string>
-    <string name="spark_early_access_description_1">أنت من أوائل من جرّب تطبيقنا الجديد على أندرويد. يسعدنا وجودك هنا!</string>
-    <string name="spark_early_access_cta">فهمت ذلك</string>
     <string name="hint_provide_feedback_cta">قيمنا على جوجل بلاي</string>
     <string name="settings_appearance_colour_overrides_surface">السطح</string>
     <string name="hint_provide_feedback_dismiss">تم</string>
@@ -537,9 +535,6 @@
     <string name="spark_keyboard_shortcuts_description">لدى Revolt اختصارات بالكيبورد! اضغط %1$s لعرضها.</string>
     <string name="settings_sessions_log_out_other">تسجيل الخروج من الحصص الأخرى</string>
     <string name="user_badge_responsible_disclosure">افشاء مسؤول</string>
-    <string name="spark_early_access">مرحباً بك للوصول الأولي! 🚀</string>
-    <string name="spark_early_access_description_2">بما أن هذه النسخة في مرحلة الوصول المبكر، فقد لا تكون الأمور مثالية بعد. قد تواجه أحيانًا بعض الأخطاء أو الأعطال أو بعض المشاكل الغريبة. ملاحظاتك تساعدنا على تنعيم الصعوبات وتحسين Revolt.</string>
-    <string name="spark_early_access_description_3">يسعدنا انضمامك إلينا. لنصنع شيئًا رائعًا معًا!</string>
     <string name="hint_provide_feedback">نحن نحب ردود الفعل البنائة!</string>
     <string name="hint_provide_feedback_description">إذا كانت لديك أي ملاحظات أو اقتراحات أو تقارير عن أخطاء، يُرجى إعلامنا. نسعى دائمًا لتحسين Revolt.</string>
     <string name="hint_provide_feedback_join_server">انضم لي سيرفر المختبرين</string>

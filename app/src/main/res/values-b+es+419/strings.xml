@@ -435,11 +435,8 @@
     <string name="service_health_alert_body_default">Actualmente estamos experimentando problemas con nuestros servicios. Consulta nuestra página de estado para obtener más información.</string>
     <string name="service_health_alert_actions_dismiss">Descartar</string>
     <string name="link_open">Abrir</string>
-    <string name="spark_early_access">¡Bienvenido al acceso anticipado! 🚀</string>
-    <string name="spark_early_access_cta">Entiendo</string>
     <string name="hint_provide_feedback">¡Nos encanta la retroalimentación!</string>
     <string name="hint_provide_feedback_dismiss">Hecho</string>
-    <string name="spark_early_access_description_3">Estamos encantados de tenerte a bordo. ¡Hagamos algo grande juntos!</string>
     <string name="badge_webhook_alt">Webhook</string>
     <string name="overview_screen_title">Sobre mí</string>
     <string name="overview_screen_error">No se pudo cargar tu vista general</string>
@@ -500,8 +497,6 @@
     <string name="hint_provide_feedback_cta">Calificar en Google Play</string>
     <string name="hint_provide_feedback_join_server">Únete al Servidor de Testers</string>
     <string name="spark_keyboard_shortcuts_dismiss">De acuerdo</string>
-    <string name="spark_early_access_description_1">Eres uno de los primeros en probar nuestra nueva app para Android. ¡Estamos encantados de tenerte aquí!</string>
-    <string name="spark_early_access_description_2">Dado que se trata de un acceso anticipado, es posible que las cosas aún no sean perfectas. Puede que te encuentres con algún error, fallo o peculiaridad. Tus comentarios nos ayudarán a limar asperezas y a mejorar Revolt.</string>
     <string name="hint_provide_feedback_description">Si tienes algún comentario, sugerencia, o quieres reportar un bug, por favor manifiéstalo. Siempre estamos buscando mejorar Revolt.</string>
     <string name="settings_appearance_avatar_shape">Forma de la Foto de Perfil</string>
     <string name="settings_appearance_avatar_shape_description">Elige el grado de redondeo para fotos de perfil, incluyendo en chat y perfiles. Esto aplica a todos los usuarios.</string>

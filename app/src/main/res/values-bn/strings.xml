@@ -417,7 +417,6 @@
     <string name="message_field_editing_message_cancel_alt">মেসেজ সংশোধন বন্ধ করুন</string>
     <string name="message_field_editing_message">মেসেজ সংশোধিত হচ্ছে</string>
     <string name="settings_sessions_first_seen">প্রথম দেখা যায় %1$s -এ</string>
-    <string name="spark_early_access_cta">বুঝেছি</string>
     <string name="hint_provide_feedback_dismiss">হয়ে গেছে</string>
     <string name="settings_sessions">সেশনগুলো</string>
     <string name="colour_picker_mode_palette">প্যালেট</string>

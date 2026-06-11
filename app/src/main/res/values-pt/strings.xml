@@ -537,10 +537,6 @@
     <string name="colour_picker_use_default">Padrão</string>
     <string name="colour_picker_cancel">Cancelar</string>
     <string name="colour_picker_apply">Aplicar</string>
-    <string name="spark_early_access">Bem-vindo ao Acesso Antecipado! 🚀</string>
-    <string name="spark_early_access_description_1">Você é um dos primeiros a experimentar nosso novo aplicativo para Android. Estamos felizes em ter você aqui!</string>
-    <string name="spark_early_access_description_3">Estamos entusiasmados por ter você a bordo. Vamos fazer algo incrível juntos!</string>
-    <string name="spark_early_access_cta">Entendi</string>
     <string name="hint_provide_feedback">Adoramos feedback!</string>
     <string name="hint_provide_feedback_cta">Avalie no Google Play</string>
     <string name="hint_provide_feedback_dismiss">Feito</string>
@@ -562,7 +558,6 @@
     <string name="keyboard_shortcut_messaging">Mensagens</string>
     <string name="keyboard_shortcut_messaging_new_line">Nova linha</string>
     <string name="keyboard_shortcut_messaging_send_message">Enviar mensagem</string>
-    <string name="spark_early_access_description_2">Como se trata de acesso antecipado, as coisas podem não estar perfeitas ainda. Você pode encontrar bugs, travamentos ou peculiaridades estranhas ocasionais. Seu feedback nos ajuda a suavizar as arestas e tornar o Revolt ainda melhor.</string>
     <string name="settings_chat_interactive_embeds_description">As incorporações interativas permitem que você interaja com alguns tipos de links diretamente no chat. Por exemplo, você pode reproduzir vídeos do YouTube ou visualizar álbuns do Apple Music.</string>
     <string name="hint_provide_feedback_description">Se você tiver algum comentário, sugestão ou relatório de bug, informe-nos. Estamos sempre procurando melhorar o Revolt.</string>
     <string name="settings_chat_interactive_embeds">Incorporações interativas</string>

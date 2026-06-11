@@ -263,10 +263,6 @@
     <string name="notice_platform_mod_dm_description">T\'informem que has rebut un avís important sobre el teu compte. Et demanem que el llegeixis amb atenció.</string>
     <string name="notice_platform_mod_dm_acknowledge">Veure</string>
     <string name="settings_appearance_avatar_shape_description">Selecciona el grau d\'arrodoniment de les fotos de perfil, incloses les del xat i els perfils. Això s\'aplica a tots els usuaris.</string>
-    <string name="spark_early_access">Benvinguts a l\'accés anticipat! 🚀</string>
-    <string name="spark_early_access_description_1">Ets un dels primers a provar la nostra nova aplicació per a Android. Estem molt contents de tenir-te aquí!</string>
-    <string name="spark_early_access_description_3">Estem molt contents de tenir-te amb nosaltres. Fem pinya i creem quelcom genial!</string>
-    <string name="spark_early_access_cta">Entesos</string>
     <string name="hint_provide_feedback">Ens encanta rebre comentaris!</string>
     <string name="hint_provide_feedback_description">Si tens cap comentari, suggeriment o vols informar d\'algun error, fes-nos-ho saber. Sempre estem buscant maneres de millorar Revolt.</string>
     <string name="hint_provide_feedback_cta">Valora\'ns a Google Play</string>
@@ -474,7 +470,6 @@
     <string name="user_info_sheet_report">Reportar</string>
     <string name="report_server_heading">Explica\'ns que està malament amb aquest servidor</string>
     <string name="emoji_picker_skin_tone_fitzpatrick_3">Tonalitat de pell mediterrània</string>
-    <string name="spark_early_access_description_2">Com que es tracta d\'un accés anticipat, és possible que algunes coses encara no siguin perfectes. Et podries trobar amb algun error, bloqueig o peculiaritat estranya. Els teus comentaris ens ajudaran a polir els detalls i a millorar Revolt.</string>
     <string name="settings_sessions_this_device_unavailable">La sessió d\'aquest dispositiu no està disponible. Si us plau, **torna a iniciar sessió** per veure la teva sessió actual.</string>
     <string name="settings_appearance_colour_overrides_tertiary_container">Contenidor terciari</string>
     <string name="file_picker_chip_camera">Fes una fotografia</string>

@@ -666,12 +666,6 @@
     <string name="spark_keyboard_shortcuts_cta">Open shortcuts</string>
     <string name="spark_keyboard_shortcuts_dismiss">Alright</string>
 
-    <string name="spark_early_access">Welcome to Early Access! 🚀</string>
-    <string name="spark_early_access_description_1">You\'re one of the first to try out our new Android app. We\'re excited to have you here!</string>
-    <string name="spark_early_access_description_2">Since this is early access, things might not be perfect just yet. You might run into the occasional bug, crash, or weird quirk. Your feedback helps us smooth out the rough edges and make Stoat even better.</string>
-    <string name="spark_early_access_description_3">We\'re thrilled to have you on board. Let\'s make something great together!</string>
-    <string name="spark_early_access_cta">Got it</string>
-
     <string name="spark_swipe_to_reply">Swipe to Reply is here.</string>
     <string name="spark_swipe_to_reply_description">Making message threads has never been easier.\nJust swipe to the left on any message.\nReply up to five messages at once.</string>
     <string name="spark_swipe_to_reply_cta">Got it</string>

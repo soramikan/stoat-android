@@ -94,7 +94,6 @@ import chat.stoat.screens.chat.views.NoCurrentChannelScreen
 import chat.stoat.screens.chat.views.OverviewScreen
 import chat.stoat.screens.chat.views.channel.ChannelScreen
 import chat.stoat.sheets.AddServerSheet
-import chat.stoat.sheets.EarlyAccessSheet
 import chat.stoat.sheets.EmoteInfoSheet
 import chat.stoat.sheets.LinkInfoSheet
 import chat.stoat.sheets.ReactionInfoSheet
@@ -158,7 +157,6 @@ class ChatRouterViewModel(
 ) : ViewModel() {
     var currentDestination by mutableStateOf<ChatRouterDestination>(ChatRouterDestination.default)
     var showNotificationRationale by mutableStateOf(false)
-    var showEarlyAccessSpark by mutableStateOf(false)
     var showSwipeToReplySpark by mutableStateOf(false)
     var showChangelogScreenForId by mutableStateOf<String?>(null)
     private var changelogCheckDone = false
@@ -180,16 +178,8 @@ class ChatRouterViewModel(
                 setSaveDestination(ChatRouterDestination.fromString(current ?: ""))
             }
 
-            val seenEarlyAccess = kvStorage.getBoolean("spark/earlyAccess/dismissed")
             val seenSwipeToReply = kvStorage.getBoolean("spark/swipeToReply/dismissed")
-            if (seenEarlyAccess == null) {
-                showEarlyAccessSpark = true
-                // we don't show swipe to reply to new users,
-                // as they would expect it to be working already
-                kvStorage.set("spark/swipeToReply/dismissed", true)
-            }
-
-            if (seenEarlyAccess == true && seenSwipeToReply != true) {
+            if (seenSwipeToReply != true) {
                 showSwipeToReplySpark = true
             }
 
@@ -244,13 +234,6 @@ class ChatRouterViewModel(
         showNotificationRationale = false
         viewModelScope.launch {
             kvStorage.set("pushNotificationsRejected", true)
-        }
-    }
-
-    fun dismissEarlyAccessSpark() {
-        showEarlyAccessSpark = false
-        viewModelScope.launch {
-            kvStorage.set("spark/earlyAccess/dismissed", true)
         }
     }
 
@@ -794,29 +777,6 @@ fun ChatRouterScreen(
                 }
             }
         )
-    }
-
-    if (viewModel.showEarlyAccessSpark) {
-        val earlyAccessSheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)
-
-        ModalBottomSheet(
-            sheetState = earlyAccessSheetState,
-            sheetGesturesEnabled = false,
-            dragHandle = {},
-            onDismissRequest = {
-                // Only dismiss using button in sheet
-            }
-        ) {
-            EarlyAccessSheet(
-                onClose = {
-                    scope.launch {
-
-                        earlyAccessSheetState.hide()
-                        viewModel.dismissEarlyAccessSpark()
-                    }
-                }
-            )
-        }
     }
 
     if (viewModel.showSwipeToReplySpark) {

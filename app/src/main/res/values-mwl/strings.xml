@@ -570,9 +570,6 @@
     <string name="spark_keyboard_shortcuts_dismiss">Stá bien</string>
     <string name="keyboard_shortcut_messaging_new_line">Nuoba lhinha</string>
     <string name="keyboard_shortcut_messaging_send_message">Ambiar Mensaige</string>
-    <string name="spark_early_access_description_1">Sós un de ls purmeiros a spormentar la nuossa nuoba app d’Android. Stamos ancantados por te tener eiqui!</string>
-    <string name="spark_early_access_description_3">Stamos ancantados por te tener a bordo. Bamos a fazer algo ancrible!</string>
-    <string name="spark_early_access_cta">Dantendi</string>
     <string name="hint_provide_feedback">Amamos feedback!</string>
     <string name="hint_provide_feedback_description">Se tenes dalgun feedback, sugeston ó reporte de bugs, por fabor di-mos. Stamos siempre antentando melhorar l Revolt.</string>
     <string name="hint_provide_feedback_cta">Culificar an Google Play</string>
@@ -583,8 +580,6 @@
     <string name="settings_chat_hint_poorly_formed_settings_keys_key_android">Revolt pa Android</string>
     <string name="settings_chat_hint_poorly_formed_settings_keys_key_unknown">%1$s (çcoincido)</string>
     <string name="settings_chat_hint_poorly_formed_settings_keys_reset">Reiniciar %1$s configuraçones</string>
-    <string name="spark_early_access">Bienbenido al acesso antecipado! 🚀</string>
-    <string name="spark_early_access_description_2">Yá que esto ye l’acesso antecipado, ye possible que cousas inda nun steian purfeitas. Puodes ancuntrar-te c’un dalgun bug, crash ó peculiaridade. L tou feedback ajuda-mos a melhorar las partes inda nó tan buonas pa fazer l Revolt inda melhor.</string>
     <string name="settings_chat_hint_poorly_formed_settings_keys">Hint</string>
     <string name="settings_chat_hint_poorly_formed_settings_keys_description">Dalgues de las tues cunfiguraçones de l Revolt stán danhadas. Esto puode ser porque outelizeste clientes de terceiros. Las cunfiguraçones danhadas son:</string>
     <string name="main_tab_communities">Quemunidades</string>

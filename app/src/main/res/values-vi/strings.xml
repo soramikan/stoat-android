@@ -475,10 +475,6 @@
     <string name="spark_keyboard_shortcuts_description">Revolt hỗ trợ tổ hợp phím đấy! Hãy bấm %1$s để xem.</string>
     <string name="spark_keyboard_shortcuts_cta">Mở tổ hợp phím</string>
     <string name="spark_keyboard_shortcuts_dismiss">Được rồi</string>
-    <string name="spark_early_access">Chào mừng đến Truy cập sớm! 🚀</string>
-    <string name="spark_early_access_description_1">Bạn là một trong những người đầu tiên đến thử ứng dụng Android mới của chúng tôi. Rất vui khi có bạn ở đây!</string>
-    <string name="spark_early_access_description_3">Chúng tôi rất mong chờ được đồng hành cùng bạn. Hãy cùng nhau làm một điều gì đó tuyệt vời!</string>
-    <string name="spark_early_access_cta">Hiểu rồi</string>
     <string name="spark_swipe_to_reply">Vuốt để trả lời đã xuất hiện.</string>
     <string name="spark_swipe_to_reply_description">Tạo các luồng tin nhắn chưa bao giờ dễ dàng hơn.\nChỉ cần vuốt các tin nhắn về bên trái.\nTrả lời đến 5 tin nhắn một lúc.</string>
     <string name="spark_swipe_to_reply_cta">Hiểu rồi</string>
@@ -543,7 +539,6 @@
     <string name="emoji_picker_clear_search">Xóa từ tìm kiếm</string>
     <string name="voice_join_permission_rationale_heading">Chúng tôi cần bạn cấp quyền</string>
     <string name="voice_join_permission_rationale_permission_camera">Camera của bạn, để mọi người có thể nhìn bạn nếu bạn mở video</string>
-    <string name="spark_early_access_description_2">Vì đây là bản Truy cập sớm, mọi thứ cũng chưa thật sự hoàn chỉnh. Thi thoảng sẽ có những lỗi vặt, văng app, hoặc những điều kì lạ xảy ra. Những phản hồi của bạn sẽ giúp chúng tôi điều chỉnh và cải thiện Revolt hơn nữa.</string>
     <string name="notice_platform_mod_dm_title">Thông báo quan trọng về tài khoản của bạn</string>
     <string name="notice_platform_mod_dm_description">Bạn đã nhận được thông báo quan trọng về tài khoản của bạn từ đội ngũ quản trị của chúng tôi. Hãy đọc thật kĩ.</string>
     <string name="settings_profile_save">Lưu</string>

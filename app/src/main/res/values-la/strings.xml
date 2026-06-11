@@ -386,9 +386,7 @@
     <string name="settings_appearance_theme_m3dynamic_unsupported_toast">Material You (non suffragatum) in hac machina non praesto est.</string>
     <string name="file_picker_chip_camera_none_installed">Nulla applicatio camerae installata est</string>
     <string name="corner_radius_picker_circular">Circularis</string>
-    <string name="spark_early_access_description_2">Cum hoc sit accessus praecox, res fortasse nondum perfectae sint. Forsitan insectum, casum, aut singulare vitium occurras. Sententiae tuae nobis adiuvant ut angustiis levandis et Revolt meliorem reddendis.</string>
     <string name="emoji_picker_skin_tone_fitzpatrick_1_2">Color cutis levis</string>
-    <string name="spark_early_access_description_1">Es unus ex primis qui novum app Android nostrum temptent. Laetissimi sumus te hic habere!</string>
     <string name="share_target_select_channel">Quaeso selige canalem ad quem communicare.</string>
     <string name="spark_notifications_rationale_description">Notificatios activare ut cum nuntiis et mentionibus adnotare possis.</string>
     <string name="settings_appearance_colour_overrides_on_surface">In Superficie</string>
@@ -486,9 +484,6 @@
     <string name="spark_keyboard_shortcuts_description">Revolt brevia claviaturae habet! Preme %1$s ut ea videas.</string>
     <string name="spark_keyboard_shortcuts_cta">Aperi brevia</string>
     <string name="spark_keyboard_shortcuts_dismiss">Bene</string>
-    <string name="spark_early_access">Salve ad Accessum Praecox! 🚀</string>
-    <string name="spark_early_access_description_3">Laetissimi sumus te ad nos venire. Faciamus aliquid magnificum simul!</string>
-    <string name="spark_early_access_cta">Intelligo</string>
     <string name="spark_swipe_to_reply">Swipe ad Respondendum hic est.</string>
     <string name="spark_swipe_to_reply_description">Fasciculos nuntiorum facere numquam fuit facilius.\nTantum ad sinistram de quolibet nuntio desliza.\nResponde usque ad quinque nuntios simul.</string>
     <string name="spark_swipe_to_reply_cta">Intelligo</string>

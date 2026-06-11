@@ -547,8 +547,6 @@
     <string name="user_info_sheet_open">Abrir información del usuario</string>
     <string name="user_info_sheet_owner_not_found">No se pudo obtener la información del propietario</string>
     <string name="user_info_sheet_category_owner">Propietario</string>
-    <string name="spark_early_access">¡Bienvenido al acceso anticipado! 🚀</string>
-    <string name="spark_early_access_description_1">Eres uno de los primeros en probar nuestra nueva aplicación para Android. ¡Estamos encantados de tenerte aquí!</string>
     <string name="hint_provide_feedback">¡Nos encanta recibir comentarios!</string>
     <string name="hint_provide_feedback_description">Si tienes algún comentario, sugerencia o informe de errores, háznoslo saber. Siempre buscamos mejorar Revolt.</string>
     <string name="hint_provide_feedback_cta">Calificar en Google Play</string>
@@ -575,9 +573,6 @@
     <string name="spark_keyboard_shortcuts">¿Utiliza un teclado?</string>
     <string name="spark_keyboard_shortcuts_description">¡Revolt tiene atajos de teclado! Pulsa %1$s para verlos.</string>
     <string name="spark_keyboard_shortcuts_dismiss">De acuerdo</string>
-    <string name="spark_early_access_description_2">Dado que se trata de un acceso anticipado, es posible que las cosas aún no sean perfectas. Puede que te encuentres con algún error, fallo o peculiaridad. Tus comentarios nos ayudarán a limar asperezas y a mejorar Revolt.</string>
-    <string name="spark_early_access_description_3">Estamos encantados de tenerte a bordo. ¡Hagamos algo grande juntos!</string>
-    <string name="spark_early_access_cta">Entendido</string>
     <string name="programming_language_snippet">[fragmento de %1$s]</string>
     <string name="user_card_tap_to_copy">Pulsa para copiar</string>
     <string name="user_card_error_sharing">Se produjo un error al compartir su tarjeta de usuario.</string>

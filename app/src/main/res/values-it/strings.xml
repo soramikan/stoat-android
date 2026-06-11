@@ -563,7 +563,6 @@
     <string name="could_not_log_in_cta_logout">Esci</string>
     <string name="programming_language_snippet">[Frammento %1$s]</string>
     <string name="spark_keyboard_shortcuts_description">Revolt ha le scorciatoie da tastiera! Premi %1$s per vederli.</string>
-    <string name="spark_early_access_description_2">Dato che questo è un accesso anticipato, alcune cose potrebbero non ancora funzionare. Potresti incontrare dei bug o crash occasionali. Il tuo feedback ci potrebbe aiutare a smussare gli spigoli più appuntiti per rendere Revolt un posto migliore.</string>
     <string name="hint_provide_feedback_description">Se vuoi darci qualche feedback, suggerimento o vuoi segnalare dei bug, per favore, faccelo sapere. Cercheremo sempre di migliorare Revolt.</string>
     <string name="main_tab_communities">Community</string>
     <string name="main_tab_conversations">Conversazioni</string>
@@ -572,10 +571,6 @@
     <string name="spark_keyboard_shortcuts">Stai usando una tastiera?</string>
     <string name="spark_keyboard_shortcuts_cta">Apri scorciatoie</string>
     <string name="spark_keyboard_shortcuts_dismiss">D\'accordo</string>
-    <string name="spark_early_access">Benvenuto/a nell\'Accesso Anticipato! 🚀</string>
-    <string name="spark_early_access_description_1">Sei tra i primi a provare la nostra nuova app Android. Siamo felici di vederti qui!</string>
-    <string name="spark_early_access_description_3">Siamo entusiasti di averti a bordo. Facciamo qualcosa di bello assieme!</string>
-    <string name="spark_early_access_cta">Capito</string>
     <string name="hint_provide_feedback">Amiamo i feedback!</string>
     <string name="hint_provide_feedback_cta">Valuta su Google Play</string>
     <string name="hint_provide_feedback_join_server">Entra nel Server dei Tester</string>

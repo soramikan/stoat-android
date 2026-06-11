@@ -523,8 +523,6 @@
     <string name="notification_channel_group_conversations">Mga conversations</string>
     <string name="notification_channel_group_social">Kaibigan at Sosyal</string>
     <string name="notification_channel_friend_requests">Mga Kahilingan ulang maging kaibigan</string>
-    <string name="spark_early_access_description_3">Kami ay nasasabik na nakasakay ka. Magkasama tayong gumawa ng isang magandang bagay!</string>
-    <string name="spark_early_access_cta">Nakuha ko</string>
     <string name="hint_provide_feedback">Gustung-gusto namin ang feedback!</string>
     <string name="hint_provide_feedback_description">Kung ikaw ay mayroong anumang puna, mungkahi, o ulat ng bug, mangyaring ipaalam sa amin. Palagi kaming naghahanap upang mapabuti ang Revolt.</string>
     <string name="hint_provide_feedback_cta">I-rate sa Google Play</string>
@@ -541,9 +539,6 @@
     <string name="hide_password">Itago ang password</string>
     <string name="show_password">Ipakita ang password</string>
     <string name="user_card_error_sharing">Nagkaroon ng error habang binabahagi ang iyong user card.</string>
-    <string name="spark_early_access_description_2">Dahil ito ay maagang pag-access, hindi perpekto ang ilang mga bagay sa ngayon. Maaari kang makaranas ng paminsan-minsang bug, pag-crash, o kakaibang quirk. Ang iyong feedback ay tumutulong sa amin na pakinisin ang mga magaspang na gilid at gawing mas mahusay ang Revolt.</string>
-    <string name="spark_early_access">Maligayang Pagdating sa Maagang Pag-access! 🚀</string>
-    <string name="spark_early_access_description_1">Isa ka sa mga unang sumubok ng aming bagong Android app. Nasasabik kaming makasama ka rito!</string>
     <string name="could_not_log_in_heading">Nagkaroon ng problema habang naglo-log in</string>
     <string name="could_not_log_in_body">Baka na-log out ka ng ibang device, o down ang iyong koneksyon sa internet.</string>
     <string name="could_not_log_in_cta_try_again">Subukan muli</string>

@@ -570,8 +570,6 @@
     <string name="spark_keyboard_shortcuts_dismiss">Хорошо</string>
     <string name="keyboard_shortcut_messaging_new_line">Новая Строка</string>
     <string name="keyboard_shortcut_messaging_send_message">Отправить Сообщение</string>
-    <string name="spark_early_access_description_3">Мы очень рады видеть вас в команде. Давайте вместе создадим нечто великое!</string>
-    <string name="spark_early_access_cta">Понятно</string>
     <string name="hint_provide_feedback">Мы любим обратную связь!</string>
     <string name="hint_provide_feedback_description">Если у вас есть обратная связь, предложения или отчеты об ошибках, пожалуйста, дайте нам знать. Мы всегда стремимся улучшить Revolt.</string>
     <string name="hint_provide_feedback_cta">Оценить в Google Play</string>
@@ -580,10 +578,7 @@
     <string name="settings_chat_hint_poorly_formed_settings_keys_key_notifications">Уведомления</string>
     <string name="settings_chat_hint_poorly_formed_settings_keys_key_unknown">%1$s (неизвестно)</string>
     <string name="settings_chat_hint_poorly_formed_settings_keys_reset">Сброс настроек %1$s</string>
-    <string name="spark_early_access">Добро пожаловать в Ранний Доступ! 🚀</string>
-    <string name="spark_early_access_description_1">Вы один из первых, кто попробовал наше Android приложение. Мы рады видеть Вас здесь!</string>
     <string name="settings_chat_hint_poorly_formed_settings_keys_key_ordering">Порядок серверов</string>
-    <string name="spark_early_access_description_2">Поскольку это ранний доступ, все может быть не совсем идеально. Вы можете столкнуться со случайными ошибками, сбоями или странными причудами. Ваша обратная связь поможет нам сгладить неровности и сделать Revolt еще лучше.</string>
     <string name="settings_chat_hint_poorly_formed_settings_keys">Подсказка</string>
     <string name="settings_chat_hint_poorly_formed_settings_keys_description">Некоторые из ваших настройек Revolt повреждены. Это может быть связано с использованием сторонних клиентов. К затронутым настройкам относятся:</string>
     <string name="settings_chat_hint_poorly_formed_settings_keys_key_android">Revolt для Android</string>
