@@ -15,6 +15,9 @@
 
     <string name="login_onboarding_heading">コミュニティを見つけて、世界とつながりましょう。</string>
     <string name="login_onboarding_body">Stoatは、いつでもどこでも友達やコミュニティとつながるための最良の方法のひとつです。</string>
+    <string name="login2_heading">コミュニティを見つけよう</string>
+    <string name="login2_body">Stoatは、あなたのために作られたチャットアプリです。</string>
+    <string name="login_try_new_experience">新しいログイン体験を試す</string>
 
     <string name="email">メール</string>
     <string name="password">パスワード</string>

@@ -16,6 +16,9 @@
 
     <string name="login_onboarding_heading">Find your community, connect with the world.</string>
     <string name="login_onboarding_body">Stoat is one of the best ways to stay connected with your friends and community, anywhere, anytime.</string>
+    <string name="login2_heading">Find your community</string>
+    <string name="login2_body">Stoat is the chat app that’s truly built with you in mind.</string>
+    <string name="login_try_new_experience">Try new login experience</string>
 
     <string name="email">Email</string>
     <string name="password">Password</string>

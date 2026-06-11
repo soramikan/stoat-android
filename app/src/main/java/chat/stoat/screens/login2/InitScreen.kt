@@ -67,7 +67,7 @@ fun InitScreen(
                     LeadPart(windowSizeClass = windowSizeClass)
                 }
                 Box(Modifier.weight(.5f), contentAlignment = Alignment.Center) {
-                    LinkPart(windowSizeClass = windowSizeClass)
+                    LinkPart(navController = navController, windowSizeClass = windowSizeClass)
                 }
             }
         } else {
@@ -80,7 +80,7 @@ fun InitScreen(
                     LeadPart(windowSizeClass = windowSizeClass)
                 }
                 Box(Modifier.weight(.5f), contentAlignment = Alignment.Center) {
-                    LinkPart(windowSizeClass = windowSizeClass)
+                    LinkPart(navController = navController, windowSizeClass = windowSizeClass)
                 }
             }
         }
@@ -109,13 +109,13 @@ private fun LeadPart(windowSizeClass: WindowSizeClass) {
         )
         Spacer(modifier = Modifier.height(64.dp))
         Text(
-            "Find your community", // FIXME hardcoded string
+            stringResource(R.string.login2_heading),
             style = MaterialTheme.typography.headlineMedium,
             textAlign = TextAlign.Center
         )
         Spacer(modifier = Modifier.height(16.dp))
         Text(
-            "Stoat is the chat app that’s truly built with you in mind.", // FIXME hardcoded string
+            stringResource(R.string.login2_body),
             style = MaterialTheme.typography.bodyLarge,
             fontSize = 18.sp,
             textAlign = TextAlign.Center
@@ -124,7 +124,7 @@ private fun LeadPart(windowSizeClass: WindowSizeClass) {
 }
 
 @Composable
-private fun LinkPart(windowSizeClass: WindowSizeClass) {
+private fun LinkPart(navController: NavController, windowSizeClass: WindowSizeClass) {
     val context = LocalContext.current
 
     Column(
@@ -139,16 +139,16 @@ private fun LinkPart(windowSizeClass: WindowSizeClass) {
     ) {
         Column(Modifier.widthIn(max = 150.dp)) {
             Button(
-                onClick = {/* navController.navigate("login2/existing/details") */ },
+                onClick = { navController.navigate("login/login") },
                 modifier = Modifier.fillMaxWidth()
             ) {
-                Text("Log In") // FIXME hardcoded string
+                Text(stringResource(R.string.login))
             }
             TextButton(
-                onClick = {/* navController.navigate("login2/new/details") */ },
+                onClick = { navController.navigate("register/greeting") },
                 modifier = Modifier.fillMaxWidth()
             ) {
-                Text("Sign Up") // FIXME hardcoded string
+                Text(stringResource(R.string.signup))
             }
         }
 

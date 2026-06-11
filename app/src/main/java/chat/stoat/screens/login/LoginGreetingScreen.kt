@@ -164,7 +164,10 @@ fun LoginGreetingScreen(navController: NavController) {
                         .fillMaxWidth()
                 ) {
                     Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                        Text(text = "Try new login experience", textAlign = TextAlign.Center)
+                        Text(
+                            text = stringResource(R.string.login_try_new_experience),
+                            textAlign = TextAlign.Center
+                        )
                     }
                 }
             }
