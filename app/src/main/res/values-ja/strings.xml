@@ -161,6 +161,10 @@
     <string name="overview_screen_catch_up_amount_badge_loading">…</string>
 
     <string name="catch_up">未読を確認</string>
+    <string name="catch_up_empty_title">未読チャンネルはありません</string>
+    <string name="catch_up_empty_description">確認する項目は残っていません。</string>
+    <string name="catch_up_keep_unread">未読のままにする</string>
+    <string name="catch_up_mentions_count">メンション: %1$d件</string>
 
     <string name="user_card_tap_to_copy">タップしてコピー</string>
     <string name="user_card_error_sharing">ユーザーカードの共有中にエラーが発生しました。</string>

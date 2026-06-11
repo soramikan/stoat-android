@@ -165,6 +165,10 @@
     <string name="overview_screen_catch_up_amount_badge_loading">…</string>
 
     <string name="catch_up">Catch Up</string>
+    <string name="catch_up_empty_title">No unread channels</string>
+    <string name="catch_up_empty_description">There is nothing left to review.</string>
+    <string name="catch_up_keep_unread">Keep unread</string>
+    <string name="catch_up_mentions_count">Mentions: %1$d</string>
 
     <string name="user_card_tap_to_copy">Tap to copy</string>
     <string name="user_card_error_sharing">An error occurred while sharing your user card.</string>
