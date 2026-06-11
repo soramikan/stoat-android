@@ -409,6 +409,11 @@
     <string name="server_settings">サーバー設定</string>
     <string name="server_settings_header">%1$sの設定</string>
     <string name="server_settings_overview">概要</string>
+    <string name="server_settings_members">メンバー</string>
+    <string name="server_settings_members_header">%1$sのメンバー</string>
+    <string name="server_settings_members_search">メンバーを検索</string>
+    <string name="server_settings_members_count">メンバー%1$d人</string>
+    <string name="server_settings_members_error">メンバーを読み込めませんでした。</string>
     <string name="server_settings_delete">サーバーを削除</string>
     <string name="server_settings_delete_confirm">%1$sを削除しますか？</string>
     <string name="server_settings_delete_confirm_description">このサーバーとチャンネルは全員から削除されます。この操作は元に戻せません。</string>

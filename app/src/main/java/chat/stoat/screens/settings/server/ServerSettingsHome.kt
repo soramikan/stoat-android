@@ -149,6 +149,27 @@ fun ServerSettingsHome(navController: NavController, serverId: String) {
                         )
                     }
 
+                    ListItem(
+                        headlineContent = {
+                            Text(
+                                text = stringResource(id = R.string.server_settings_members)
+                            )
+                        },
+                        leadingContent = {
+                            SettingsIcon {
+                                Icon(
+                                    painter = painterResource(R.drawable.ic_group_24dp),
+                                    contentDescription = null,
+                                )
+                            }
+                        },
+                        modifier = Modifier
+                            .testTag("server_settings_view_members")
+                            .clickable {
+                                navController.navigate("settings/server/$serverId/members")
+                            }
+                    )
+
                     if (server.owner == StoatAPI.selfId) {
                         ListItem(
                             headlineContent = {

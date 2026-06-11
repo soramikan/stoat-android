@@ -435,6 +435,11 @@
     <string name="server_settings">Server settings</string>
     <string name="server_settings_header">%1$s settings</string>
     <string name="server_settings_overview">Overview</string>
+    <string name="server_settings_members">Members</string>
+    <string name="server_settings_members_header">%1$s members</string>
+    <string name="server_settings_members_search">Search members</string>
+    <string name="server_settings_members_count">%1$d members</string>
+    <string name="server_settings_members_error">Couldn\'t load members.</string>
     <string name="server_settings_delete">Delete server</string>
     <string name="server_settings_delete_confirm">Delete %1$s?</string>
     <string name="server_settings_delete_confirm_description">This server and its channels will be deleted for everyone. This cannot be undone.</string>
