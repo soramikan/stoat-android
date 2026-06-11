@@ -483,6 +483,16 @@
     <string name="server_settings_categories_delete_confirm">Delete %1$s?</string>
     <string name="server_settings_categories_delete_confirm_description">Channels in this category will become uncategorised.</string>
     <string name="server_settings_categories_delete_confirm_yes">Delete</string>
+    <string name="server_settings_emojis">Emojis</string>
+    <string name="server_settings_emojis_header">%1$s emojis</string>
+    <string name="server_settings_emojis_reload">Reload emojis</string>
+    <string name="server_settings_emojis_name">Emoji name</string>
+    <string name="server_settings_emojis_name_hint">Use lowercase letters, numbers, underscores, or hyphens.</string>
+    <string name="server_settings_emojis_upload">Upload emoji</string>
+    <string name="server_settings_emojis_uploading">Uploading...</string>
+    <string name="server_settings_emojis_count">%1$d emojis</string>
+    <string name="server_settings_emojis_delete_confirm">Delete :%1$s:?</string>
+    <string name="server_settings_emojis_delete_confirm_yes">Delete</string>
     <string name="server_settings_roles">Roles</string>
     <string name="server_settings_roles_header">%1$s roles</string>
     <string name="server_settings_roles_default">Default permissions</string>

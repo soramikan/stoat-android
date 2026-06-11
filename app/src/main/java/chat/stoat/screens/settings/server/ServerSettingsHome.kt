@@ -262,6 +262,29 @@ fun ServerSettingsHome(navController: NavController, serverId: String) {
                         )
                     }
 
+                    if (permissions.hasPermission(PermissionBit.ManageCustomisation)) {
+                        ListItem(
+                            headlineContent = {
+                                Text(
+                                    text = stringResource(id = R.string.server_settings_emojis)
+                                )
+                            },
+                            leadingContent = {
+                                SettingsIcon {
+                                    Icon(
+                                        painter = painterResource(R.drawable.ic_mood_24dp),
+                                        contentDescription = null,
+                                    )
+                                }
+                            },
+                            modifier = Modifier
+                                .testTag("server_settings_view_emojis")
+                                .clickable {
+                                    navController.navigate("settings/server/$serverId/emojis")
+                                }
+                        )
+                    }
+
                     if (server.owner == StoatAPI.selfId) {
                         ListItem(
                             headlineContent = {

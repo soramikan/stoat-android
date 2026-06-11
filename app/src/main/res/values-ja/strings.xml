@@ -457,6 +457,16 @@
     <string name="server_settings_categories_delete_confirm">%1$sを削除しますか？</string>
     <string name="server_settings_categories_delete_confirm_description">このカテゴリのチャンネルは未分類になります。</string>
     <string name="server_settings_categories_delete_confirm_yes">削除</string>
+    <string name="server_settings_emojis">絵文字</string>
+    <string name="server_settings_emojis_header">%1$sの絵文字</string>
+    <string name="server_settings_emojis_reload">絵文字を再読み込み</string>
+    <string name="server_settings_emojis_name">絵文字名</string>
+    <string name="server_settings_emojis_name_hint">小文字の英数字、アンダースコア、ハイフンを使用できます。</string>
+    <string name="server_settings_emojis_upload">絵文字をアップロード</string>
+    <string name="server_settings_emojis_uploading">アップロード中...</string>
+    <string name="server_settings_emojis_count">絵文字%1$d件</string>
+    <string name="server_settings_emojis_delete_confirm">:%1$s:を削除しますか？</string>
+    <string name="server_settings_emojis_delete_confirm_yes">削除</string>
     <string name="server_settings_roles">ロール</string>
     <string name="server_settings_roles_header">%1$sのロール</string>
     <string name="server_settings_roles_default">デフォルト権限</string>
