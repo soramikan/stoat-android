@@ -360,7 +360,7 @@ fun SettingsScreen(
                                     InviteActivity::class.java
                                 ).setAction(Intent.ACTION_VIEW)
 
-                                intent.data = "https://stt.gg/Testers".toUri()
+                                intent.data = "https://chat.setoka.net/invite/Testers".toUri()
                                 context.startActivity(intent)
                             }
                     )
